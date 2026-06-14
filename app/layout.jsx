@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "About Us | Amar Travels - Premium Travel & Transportation in Gujarat",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col bg-white text-[#475569] font-sans">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

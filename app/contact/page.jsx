@@ -3,7 +3,6 @@ import ContactInfoSection from "@/components/ContactInfoSection";
 import ContactFormSection from "@/components/ContactFormSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
 import { contactHeroData } from "@/data/contactData";
 
 export default function Contact() {
@@ -14,7 +13,6 @@ export default function Contact() {
             <ContactFormSection />
             <FAQSection />
             <CTASection />
-            <Footer />
         </main>
     );
 }

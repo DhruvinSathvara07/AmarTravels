@@ -3,7 +3,6 @@ import StorySection from "@/components/StorySection";
 import MissionSection from "@/components/MissionSection";
 import ReviewSection from "@/components/ReviewSection";
 import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
 import { heroData } from "@/data/aboutData";
 
 export default function About() {
@@ -14,7 +13,7 @@ export default function About() {
             <MissionSection />
             <ReviewSection />
             <CTASection />
-            <Footer />
+
         </main>
     );
 }
