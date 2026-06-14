@@ -11,7 +11,10 @@ export const contactHeroData = {
     className: "max-w-[600px] text-4xl sm:text-5xl md:text-6xl lg:text-[56px]"
   },
   description: "Have questions or need assistance with your travel plans? Our team is ready to help you 24/7. Reach out to us through any of the methods below.",
-  cta: null, // No CTA button in contact hero
+  cta: {
+    text: "Book Now",
+    href: "/booking"
+  },
   features: [
     {
       Icon: Headphones,

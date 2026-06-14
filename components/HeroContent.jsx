@@ -56,7 +56,7 @@ export default function HeroContent({ data }) {
       {/* Description Text */}
       <motion.p
         variants={itemVariants}
-        className="text-[14.5px] font-normal leading-[1.7] text-body-text max-w-[480px] mb-5 font-sans"
+        className={`font-normal leading-[1.7] text-body-text mb-5 font-sans ${data.descriptionClassName || "text-[14.5px] max-w-[480px]"}`}
       >
         {description}
       </motion.p>
@@ -75,19 +75,21 @@ export default function HeroContent({ data }) {
       )}
 
       {/* Feature Items Section */}
-      <motion.div
-        variants={itemVariants}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-5 border-t border-slate-100 pt-5"
-      >
-        {features.map((feature, idx) => (
-          <FeatureItem
-            key={idx}
-            Icon={feature.Icon}
-            title={feature.title}
-            description={feature.description}
-          />
-        ))}
-      </motion.div>
+      {features && features.length > 0 && (
+        <motion.div
+          variants={itemVariants}
+          className="grid grid-cols-1 sm:grid-cols-3 gap-5 border-t border-slate-100 pt-5"
+        >
+          {features.map((feature, idx) => (
+            <FeatureItem
+              key={idx}
+              Icon={feature.Icon}
+              title={feature.title}
+              description={feature.description}
+            />
+          ))}
+        </motion.div>
+      )}
     </motion.div>
   );
 }
