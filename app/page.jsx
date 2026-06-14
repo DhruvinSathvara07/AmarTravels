@@ -1,5 +1,10 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
 
 export default function Home() {
-  return <h1>hello amartourstravels</h1>;
+  return (
+    <main className="min-h-screen bg-white">
+      {/* <Hero /> */}
+    </main>
+  );
 }
+
