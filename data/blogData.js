@@ -18,6 +18,7 @@ export const blogHeroData = {
   image: {
     src: "/aboutherosection.png",
     alt: "Amar Travels Blog"
+    // alt: "Amar Travels Blog"
   }
 };
 
