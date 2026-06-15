@@ -1,83 +1,57 @@
 "use client";
 
-import { motion } from "framer-motion";
-import CTAContent from "./CTAContent";
-import CTAButton from "./CTAButton";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 export default function CTASection() {
-  const containerVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
-    },
-  };
-
-  const handleCTA = () => {
-    // Navigate to booking or scroll to booking section
-    const bookingSection = document.getElementById("booking");
-    if (bookingSection) {
-      bookingSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-      window.location.href = "/booking";
-    }
-  };
-
   return (
-    <section className="relative w-full pb-10 z-20">
-      <div className="max-w-[1440px] w-full mx-auto px-6 md:px-10 lg:px-12 xl:px-16">
-        {/* Main Red Gradient Container */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="relative rounded-[36px] overflow-hidden isolate bg-gradient-to-r from-[#DC241C] via-[#e52b22] to-[#c91c14] border border-white/10"
-        >
-          {/* Subtle Radial Glossy Light Reflection */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(255,255,255,0.18),transparent_50%)] pointer-events-none z-10" />
-
-          {/* Clean Glassmorphic Sheen */}
-          <div className="absolute inset-0 bg-white/[0.02] backdrop-blur-[1px] pointer-events-none z-10" />
-
-          {/* Inner Grid */}
-          <div className="px-8 md:px-12 lg:px-16 py-10 md:py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-              
-              {/* Left Column - Heading & Description */}
-              <motion.div
-                variants={itemVariants}
-                className="lg:col-span-8 z-20 relative text-left"
-              >
-                <CTAContent />
-              </motion.div>
-
-              {/* Right Column - White Button */}
-              <motion.div
-                variants={itemVariants}
-                className="lg:col-span-4 z-20 relative flex items-center justify-start lg:justify-end"
-              >
-                <CTAButton text="Book Your Journey" onClick={handleCTA} />
-              </motion.div>
-
-            </div>
+    <section className="w-full bg-white py-8 md:py-10">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+        
+        <div className="relative w-full rounded-2xl overflow-hidden bg-[#DC241C] flex flex-col md:flex-row shadow-lg">
+          
+          {/* Left Content Area (Red) */}
+          <div className="relative z-10 w-full md:w-[60%] p-8 md:p-12 lg:p-16 flex flex-col justify-center text-white">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+              Ready for Your <br className="hidden lg:block" />
+              Next Adventure?
+            </h2>
+            <p className="text-white/90 text-sm md:text-base mb-8 max-w-md">
+              From short trips to long journeys, <br className="hidden lg:block" />
+              we make every ride memorable.
+            </p>
+            
+            <Link 
+              href="/booking"
+              className="group inline-flex items-center justify-center gap-2 bg-white text-[#DC241C] px-6 py-3 rounded-md font-bold text-sm w-fit hover:bg-gray-50 transition-colors"
+            >
+              Book Your Ride
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
           </div>
 
-        </motion.div>
+          {/* Right Image Area */}
+          <div className="relative w-full md:w-[50%] h-64 md:h-auto md:absolute md:right-0 md:top-0 md:bottom-0">
+            {/* The torn/brush edge effect using an inline SVG */}
+            <div className="hidden md:block absolute left-[-1px] top-0 bottom-0 w-16 md:w-24 z-10 text-[#DC241C]">
+              <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full fill-current">
+                <path d="M0,0 L100,0 C80,20 90,40 60,60 C40,75 70,90 0,100 Z" />
+              </svg>
+            </div>
+            
+            <Image
+              src="/ctabackgroundimage.png"
+              alt="Mercedes Van on mountain road"
+              fill
+              className="object-cover object-center"
+            />
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
