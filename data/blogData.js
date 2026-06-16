@@ -6,7 +6,7 @@ export const blogHeroData = {
     plainText: "Travel Stories,",
     subText: "Tips & ",
     highlightedText: "Guides",
-    className: "max-w-[600px] text-4xl sm:text-5xl md:text-6xl lg:text-[68px]"
+    className: "max-w-[600px] text-4xl sm:text-[46px] lg:text-[46px]"
   },
   description: "Explore travel stories, expert tips, destination guides and latest updates from Amar Travels to make your journey comfortable, safe and memorable.",
   descriptionClassName: "text-[14.5px] max-w-[480px]",

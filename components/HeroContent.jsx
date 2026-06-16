@@ -46,7 +46,7 @@ export default function HeroContent({ data }) {
       {/* Main Heading */}
       <motion.h1
         variants={itemVariants}
-        className={`font-heading font-bold text-dark-heading tracking-[-0.03em] leading-[1.05] mb-3 ${heading.className || "max-w-[500px] text-4xl sm:text-5xl md:text-6xl lg:text-[68px]"}`}
+        className={`font-heading font-bold text-dark-heading tracking-[-0.03em] leading-[1.05] mb-3 ${heading.className || "max-w-[500px] text-4xl sm:text-5xl md:text-[56px] lg:text-[56px]"}`}
       >
         {heading.plainText}
         {heading.plainText && <br />}

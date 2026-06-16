@@ -1,70 +1,80 @@
 "use client";
 
-import { MapPin, Plane, Calendar, User, ChevronDown, ArrowRight } from "lucide-react";
+import { MapPin, Calendar, User, ChevronDown, ArrowRight, Minus } from "lucide-react";
 
 export default function BookingSearchBox() {
   return (
-    <div className="w-full relative z-30 flex justify-center">
-      <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 absolute top-0 -translate-y-1/2">
-        <div className="bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-2 md:p-3 flex flex-col lg:flex-row items-center justify-between gap-4 border border-gray-100">
+    <div className="w-full relative z-30 flex justify-center -mt-8 sm:-mt-10 md:-mt-12 lg:-mt-14 mb-10 md:mb-16">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
+        <div className="bg-white rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.08)] py-4 px-6 md:py-6 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-6 border border-gray-100">
           
           {/* From */}
-        <div className="flex items-center gap-3 px-4 py-2 flex-1 w-full lg:w-auto lg:border-r border-gray-100">
-          <MapPin className="text-[#DC241C]" size={20} />
-          <div className="flex flex-col w-full">
-            <span className="text-[11px] font-bold text-gray-800">From</span>
-            <input 
-              type="text" 
-              placeholder="Pickup location" 
-              className="text-sm text-gray-500 outline-none w-full bg-transparent placeholder-gray-400"
-            />
-          </div>
-        </div>
-
-        {/* To */}
-        <div className="flex items-center gap-3 px-4 py-2 flex-1 w-full lg:w-auto lg:border-r border-gray-100">
-          <Plane className="text-[#DC241C]" size={20} />
-          <div className="flex flex-col w-full">
-            <span className="text-[11px] font-bold text-gray-800">To</span>
-            <input 
-              type="text" 
-              placeholder="Destination" 
-              className="text-sm text-gray-500 outline-none w-full bg-transparent placeholder-gray-400"
-            />
-          </div>
-        </div>
-
-        {/* Date */}
-        <div className="flex items-center gap-3 px-4 py-2 flex-1 w-full lg:w-auto lg:border-r border-gray-100 cursor-pointer">
-          <Calendar className="text-[#DC241C]" size={20} />
-          <div className="flex flex-col w-full">
-            <span className="text-[11px] font-bold text-gray-800">Date</span>
+          <div className="flex flex-col w-full lg:w-1/4 lg:pr-6 lg:border-r border-gray-100 relative group cursor-pointer">
+            <div className="flex items-center gap-2 mb-2">
+              <Minus size={16} className="text-gray-300" />
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">From</span>
+            </div>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-400">Select date</span>
-              <ChevronDown size={14} className="text-gray-400" />
+              <div className="flex items-center gap-3">
+                <MapPin className="text-[#DC241C]" size={20} />
+                <span className="text-sm font-medium text-dark-heading">Pick-up location</span>
+              </div>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-dark-heading transition-colors" />
             </div>
           </div>
-        </div>
 
-        {/* Passengers */}
-        <div className="flex items-center gap-3 px-4 py-2 flex-1 w-full lg:w-auto cursor-pointer">
-          <User className="text-[#DC241C]" size={20} />
-          <div className="flex flex-col w-full">
-            <span className="text-[11px] font-bold text-gray-800">Passengers</span>
+          {/* To */}
+          <div className="flex flex-col w-full lg:w-1/4 lg:px-6 lg:border-r border-gray-100 relative group cursor-pointer">
+            <div className="flex items-center gap-2 mb-2">
+              <Minus size={16} className="text-gray-300" />
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">To</span>
+            </div>
             <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-400">Add passengers</span>
-              <ChevronDown size={14} className="text-gray-400" />
+              <div className="flex items-center gap-3">
+                <MapPin className="text-[#DC241C]" size={20} />
+                <span className="text-sm font-medium text-dark-heading">Destination</span>
+              </div>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-dark-heading transition-colors" />
             </div>
           </div>
+
+          {/* Date */}
+          <div className="flex flex-col w-full lg:w-1/4 lg:px-6 lg:border-r border-gray-100 relative group cursor-pointer">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Date</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <Calendar className="text-[#DC241C]" size={20} />
+                <span className="text-sm font-medium text-dark-heading">Select date</span>
+              </div>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-dark-heading transition-colors" />
+            </div>
+          </div>
+
+          {/* Passengers */}
+          <div className="flex flex-col w-full lg:w-1/4 lg:px-6 relative group cursor-pointer">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Passengers</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <User className="text-[#DC241C]" size={20} />
+                <span className="text-sm font-medium text-dark-heading">Add passengers</span>
+              </div>
+              <ChevronDown size={16} className="text-gray-400 group-hover:text-dark-heading transition-colors" />
+            </div>
+          </div>
+
+          {/* Search Button */}
+          <div className="w-full lg:w-auto mt-4 lg:mt-0 flex-shrink-0">
+            <button className="w-full lg:w-auto bg-[#DC241C] hover:bg-[#b91c18] text-white rounded-xl px-8 py-4 flex items-center justify-center gap-3 font-semibold text-sm transition-all duration-300 shadow-[0_4px_14px_rgba(220,36,28,0.4)] hover:shadow-[0_6px_20px_rgba(220,36,28,0.6)] hover:-translate-y-0.5">
+              Check Availability
+              <ArrowRight size={18} />
+            </button>
+          </div>
+
         </div>
-
-        {/* Search Button */}
-        <button className="w-full lg:w-auto bg-[#DC241C] hover:bg-[#b91c18] text-white rounded-xl px-6 py-4 flex items-center justify-center gap-2 font-semibold text-sm transition-colors whitespace-nowrap">
-          Check Availability
-          <ArrowRight size={16} />
-        </button>
-
-      </div>
       </div>
     </div>
   );

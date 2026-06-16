@@ -3,7 +3,7 @@ import HeroImage from "./HeroImage";
 
 export default function Hero({ data }) {
   return (
-    <section className="relative w-full bg-white overflow-hidden flex flex-col justify-center lg:h-[calc(100vh-80px)] py-12 sm:py-16 lg:py-0">
+    <section className="relative w-full bg-white overflow-hidden flex flex-col justify-center lg:h-[calc(100vh-80px)] mt-20 py-12 sm:py-16 lg:py-0">
       {/* Premium Ambient Background Accents */}
       <div 
         className="absolute top-[10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-radial from-slate-100 to-transparent opacity-60 blur-[120px] pointer-events-none -z-10" 

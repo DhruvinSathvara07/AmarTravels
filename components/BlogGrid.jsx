@@ -32,9 +32,10 @@ const fallbackData = [
   }
 ];
 
-export default function BlogGrid({ blogs }) {
+export default function BlogGrid({ blogs, limit = 0 }) {
   // Always render something. Use fallbackData if blogs is missing or empty.
-  const displayBlogs = blogs && blogs.length > 0 ? blogs : fallbackData;
+  const resolvedBlogs = blogs && blogs.length > 0 ? blogs : fallbackData;
+  const displayBlogs = limit > 0 ? resolvedBlogs.slice(0, limit) : resolvedBlogs;
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">

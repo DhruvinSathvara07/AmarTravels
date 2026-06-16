@@ -1,50 +1,35 @@
 "use client";
 
+import Image from "next/image";
 import WhyChooseHeader from "./WhyChooseHeader";
 import WhyChooseGrid from "./WhyChooseGrid";
-
-export const whyChooseData = [
-  {
-    id: 1,
-    title: "Well Maintained Fleet",
-    description: "All vehicles are regularly serviced and maintained.",
-    icon: "Car",
-  },
-  {
-    id: 2,
-    title: "Professional Drivers",
-    description: "Experienced, verified and polite drivers for your safety.",
-    icon: "Users",
-  },
-  {
-    id: 3,
-    title: "Clean & Comfortable",
-    description: "Hygienic and comfortable vehicles for every journey.",
-    icon: "ShieldCheck",
-  },
-  {
-    id: 4,
-    title: "On-Time Service",
-    description: "We value your time and ensure punctual service.",
-    icon: "Clock3",
-  },
-  {
-    id: 5,
-    title: "Affordable Pricing",
-    description: "Best rates with transparent and no hidden charges.",
-    icon: "MapPin",
-  },
-];
+import { whyChooseUsData } from "@/data/homeData";
 
 export default function WhyChooseSection() {
   return (
-    <section className="relative bg-[#ffffff] pb-20 lg:pb-24 pt-8 lg:pt-10 overflow-hidden">
-      {/* Subtle radial glow background */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-red-50/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
-      
+    <section className="relative bg-white py-10 lg:py-16 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-12 xl:px-16">
-        <WhyChooseHeader />
-        <WhyChooseGrid features={whyChooseData} />
+        
+        {/* Top Row: Header (Left) and Image (Right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-8">
+          {/* Header Left */}
+          <div>
+            <WhyChooseHeader />
+          </div>
+          
+          {/* Image Right */}
+          <div className="relative w-full h-[250px] sm:h-[280px] lg:h-[300px] rounded-3xl overflow-hidden shadow-lg">
+            <Image 
+              src="/serviceimage6.png" 
+              alt="Amar Travels Fleet" 
+              fill 
+              className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Bottom Row: Stats Grid */}
+        <WhyChooseGrid features={whyChooseUsData} />
       </div>
     </section>
   );

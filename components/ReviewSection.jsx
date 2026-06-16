@@ -43,7 +43,7 @@ export default function ReviewSection() {
   };
 
   return (
-    <section className="relative w-full bg-white py-16 lg:py-20 overflow-hidden z-10">
+    <section className="relative w-full bg-white pt-4 pb-16 lg:pt-8 lg:pb-20 overflow-hidden z-10">
       {/* Premium subtle radial glows */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-red-50/50 rounded-full blur-[130px] pointer-events-none -z-10" />
       <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/2 w-[450px] h-[450px] bg-blue-50/20 rounded-full blur-[110px] pointer-events-none -z-10" />

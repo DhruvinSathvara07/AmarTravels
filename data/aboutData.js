@@ -1,11 +1,11 @@
 "use client";
 
-import { 
-  BadgeCheck, 
-  Users, 
-  CarFront, 
-  UserRound, 
-  Headphones, 
+import {
+  BadgeCheck,
+  Users,
+  CarFront,
+  UserRound,
+  Headphones,
   ShieldCheck,
   TimerReset,
   Phone,
@@ -15,7 +15,7 @@ import {
 
 export const navbarData = {
   logo: {
-    src: "/logo.jpg",
+    src: "/logo.png",
     alt: "Amar Travels Logo",
     width: 130,
     height: 42
@@ -25,7 +25,7 @@ export const navbarData = {
     { name: "Booking", href: "/booking" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blogs", href: "/blogs" },
     { name: "Contact", href: "/contact" },
   ],
   cta: {
@@ -39,7 +39,8 @@ export const heroData = {
   heading: {
     plainText: "Your Journey,",
     subText: "Our ",
-    highlightedText: "Passion."
+    highlightedText: "Passion.",
+    className: "max-w-[500px] text-4xl sm:text-[46px] lg:text-[46px]"
   },
   description: "Amar Travels is a trusted name in travel and transportation across Gujarat. We are committed to providing safe, comfortable and memorable journeys with premium vehicles and exceptional service.",
   cta: {
@@ -214,7 +215,7 @@ export const ctaData = {
 
 export const footerData = {
   brand: {
-    logo: "/logo.jpg",
+    logo: "/logo.png",
     description: "Your trusted travel partner for comfortable and memorable journeys across Gujarat and beyond."
   },
   socials: [
@@ -250,7 +251,7 @@ export const footerData = {
     title: "Support",
     links: [
       { name: "About Us", href: "/about" },
-      { name: "Blog", href: "/blog" },
+      { name: "Blogs", href: "/blogs" },
       { name: "Contact Us", href: "/contact" },
       { name: "Privacy Policy", href: "/privacy-policy" },
       { name: "Terms & Conditions", href: "/terms" }

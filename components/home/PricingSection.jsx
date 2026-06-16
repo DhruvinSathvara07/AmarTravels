@@ -20,14 +20,6 @@ function PricingCard({ plan }) {
         <p className="text-sm text-gray-500">{plan.description}</p>
       </div>
 
-      {/* Price */}
-      <div className="mb-8">
-        <div className="flex items-baseline text-gray-900">
-          <span className="text-4xl font-bold tracking-tight">₹{plan.price}</span>
-          <span className="text-sm text-gray-500 ml-1 font-semibold">/ km</span>
-        </div>
-      </div>
-
       {/* Features List */}
       <ul className="flex flex-col gap-4 mb-8 flex-1">
         {plan.features.map((feature, idx) => (

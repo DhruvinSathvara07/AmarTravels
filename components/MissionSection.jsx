@@ -6,7 +6,7 @@ import MissionFeatures from "./MissionFeatures";
 
 export default function MissionSection() {
   return (
-    <section className="relative w-full bg-white pb-24 lg:pb-28">
+    <section className="relative w-full bg-white pb-8 lg:pb-12">
       <div className="max-w-[1440px] w-full mx-auto px-6 md:px-10 lg:px-12 xl:px-16">
         {/* Isolated Banner Box with background cover, overlay and shadows */}
         <div className="relative isolate rounded-[32px] overflow-hidden border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.25)] bg-slate-950">

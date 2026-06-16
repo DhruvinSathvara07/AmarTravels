@@ -4,12 +4,14 @@ import HomeHero from "@/components/home/HomeHero";
 import BookingSearchBox from "@/components/home/BookingSearchBox";
 import PremiumFleetSection from "@/components/home/PremiumFleetSection";
 import PricingSection from "@/components/home/PricingSection";
-import PremiumServicesSection from "@/components/home/PremiumServicesSection";
-import TourPackagesSection from "@/components/home/TourPackagesSection";
-import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
-import TestimonialsSection from "@/components/home/TestimonialsSection";
-import LatestBlogsSection from "@/components/home/LatestBlogsSection";
+import ServicesSection from "@/components/ServicesSection";
+import MissionSection from "@/components/MissionSection";
+import ReviewSection from "@/components/ReviewSection";
+import WhyChooseSection from "@/components/WhyChooseSection";
+import BlogSection from "@/components/BlogSection";
 import CTASection from "@/components/CTASection";
+
+import { latestBlogsData } from "@/data/homeData";
 
 export default function Home() {
   return (
@@ -18,11 +20,11 @@ export default function Home() {
       <BookingSearchBox />
       <PremiumFleetSection />
       <PricingSection />
-      <PremiumServicesSection />
-      <TourPackagesSection />
-      <WhyChooseUsSection />
-      <TestimonialsSection />
-      <LatestBlogsSection />
+      <ServicesSection limit={3} showExploreButton={true} />
+      <MissionSection />
+      <ReviewSection />
+      <WhyChooseSection />
+      <BlogSection blogs={latestBlogsData} limit={3} showExploreButton={true} />
       <CTASection />
     </main>
   );

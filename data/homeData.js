@@ -79,44 +79,36 @@ export const premiumFleetData = [
 
 export const pricingPlanData = [
   {
-    id: "basic",
-    name: "Basic Plan",
-    description: "Perfect for short trips",
-    price: "12",
+    id: "car",
+    name: "Car",
+    description: "Standard Hatchback & Sedan",
     isPopular: false,
     features: [
-      "AC Vehicle",
-      "Driver Allowance",
-      "Fuel Included",
-      "80 km / Day"
+      "4 to 7 Seater Capacity",
+      "300 Km / Day Minimum",
+      "Toll Tax Extra Applicable"
     ]
   },
   {
-    id: "standard",
-    name: "Standard Plan",
-    description: "Best for family trips",
-    price: "18",
+    id: "luxurious",
+    name: "Luxurious Car",
+    description: "Vellfire, Mercedes, Audi, etc.",
     isPopular: true,
     features: [
-      "AC Vehicle",
-      "Driver Allowance",
-      "Fuel Included",
-      "200 km / Day",
-      "Toll & Parking"
+      "4 to 7 Seater Capacity",
+      "300 Km / Day Minimum",
+      "Toll Tax Extra Applicable"
     ]
   },
   {
-    id: "premium",
-    name: "Premium Plan",
-    description: "Luxury travel experience",
-    price: "24",
+    id: "bus",
+    name: "Mini Bus & Bus",
+    description: "Perfect for large group travels",
     isPopular: false,
     features: [
-      "Luxury Vehicle",
-      "Professional Driver",
-      "Fuel Included",
-      "300 km / Day",
-      "Toll, Parking, State Tax"
+      "9 to 40 Seater Capacity",
+      "300 Km / Day Minimum",
+      "Toll Tax Extra Applicable"
     ]
   }
 ];

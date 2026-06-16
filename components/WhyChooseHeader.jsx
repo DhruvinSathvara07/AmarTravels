@@ -14,8 +14,8 @@ export default function WhyChooseHeader() {
         <h3 className="text-[#DC241C] text-[13px] font-semibold tracking-[0.18em] uppercase mb-4">
           Why Choose Us
         </h3>
-        <h2 className="text-4xl md:text-5xl lg:text-[54px] font-bold text-[#0f172a] leading-tight mt-4 font-poppins">
-          Your Comfort, <span className="text-[#DC241C]">Our Priority</span>
+        <h2 className="text-4xl md:text-5xl lg:text-[52px] font-bold text-[#0f172a] leading-tight mt-4 font-poppins">
+          Reliable Tours & Travels <br className="hidden lg:block"/> Service in Gujarat
         </h2>
       </motion.div>
     </div>

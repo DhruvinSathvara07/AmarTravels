@@ -8,7 +8,7 @@ export const contactHeroData = {
     plainText: "We're Here to ",
     subText: "Help You ",
     highlightedText: "Travel",
-    className: "max-w-[600px] text-4xl sm:text-5xl md:text-6xl lg:text-[56px]"
+    className: "max-w-[600px] text-4xl sm:text-5xl md:text-[46px] lg:text-[46px]"
   },
   description: "Have questions or need assistance with your travel plans? Our team is ready to help you 24/7. Reach out to us through any of the methods below.",
   cta: {
