@@ -2,42 +2,65 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Users } from "lucide-react";
+import Link from "next/link";
+import { Users, Car, Snowflake, PhoneCall } from "lucide-react";
 
 export default function FleetCard({ vehicle, index }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group bg-white rounded-[28px] border border-slate-200 overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:border-red-100 transition-all duration-300 relative h-[220px] p-5 lg:p-6 flex flex-col justify-between"
+      className="group bg-white rounded-2xl border border-slate-100 overflow-hidden shadow-sm hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)] hover:-translate-y-[6px] hover:scale-[1.02] transition-all duration-300 relative flex flex-col h-full"
     >
       {/* Top Left Badge */}
-      <div className="absolute top-5 left-5 lg:top-6 lg:left-6 bg-[#DC241C] text-white rounded-[8px] w-10 h-10 flex items-center justify-center text-sm font-semibold z-20">
+      <div className="absolute top-4 left-4 bg-[#DC241C] text-white rounded w-8 h-8 flex items-center justify-center text-sm font-medium z-10">
         {String(index + 1).padStart(2, '0')}
       </div>
 
-      {/* Image Container */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[55%] md:w-[60%] h-[85%] z-0 pointer-events-none">
+      {/* Image Area */}
+      <div className="relative w-full h-[180px] flex items-center justify-center p-6 bg-slate-50/50">
         <Image
           src={vehicle.image}
           alt={vehicle.title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-contain object-right pr-4 group-hover:scale-[1.05] transition-transform duration-500"
+          className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
         />
       </div>
 
-      {/* Bottom Text Content */}
-      <div className="relative z-10 mt-auto w-[55%] lg:w-[50%] pointer-events-none">
-        <h3 className="text-[17px] lg:text-[19px] font-semibold text-[#0f172a] font-poppins leading-snug">
+      {/* Content Area */}
+      <div className="p-6 flex flex-col flex-grow bg-white">
+        <h3 className="text-lg font-bold text-slate-900 leading-tight mb-4 line-clamp-2">
           {vehicle.title}
         </h3>
-        <div className="flex items-center gap-2 text-[#DC241C] text-[13px] lg:text-sm font-medium mt-2">
-          <Users className="w-4 h-4" />
-          <span>{vehicle.seats}</span>
+
+        {/* Info Row */}
+        <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 mb-6 font-poppins flex-grow">
+          <div className="flex items-center gap-1.5">
+            <Users className="w-4 h-4 text-[#DC241C]" />
+            <span>{vehicle.seats}</span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Car className="w-4 h-4 text-[#DC241C]" />
+            <span>{vehicle.type}</span>
+          </div>
+          {vehicle.ac && (
+            <div className="flex items-center gap-1.5">
+              <Snowflake className="w-4 h-4 text-[#DC241C]" />
+              <span>AC</span>
+            </div>
+          )}
         </div>
+
+        <Link 
+          href="/booking"
+          className="mt-auto mx-auto w-full inline-flex items-center justify-center gap-2.5 bg-transparent border border-[#DC241C] text-[#DC241C] rounded-lg px-6 py-3 text-[15px] font-bold hover:bg-[#DC241C] hover:text-white transition-all duration-300"
+        >
+          <PhoneCall className="w-5 h-5" />
+          Book Now
+        </Link>
       </div>
     </motion.div>
   );

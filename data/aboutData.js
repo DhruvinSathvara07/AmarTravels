@@ -62,7 +62,7 @@ export const heroData = {
     },
   ],
   image: {
-    src: "/aboutherosection.png",
+    src: "/herosection.png",
     alt: "Amar Travels"
   }
 };
@@ -208,7 +208,7 @@ export const ctaData = {
   description: "Whether it's a family trip, corporate travel or a spiritual journey — we are here to make it exceptional.",
   buttonText: "Book Your Journey",
   image: {
-    src: "/aboutherosection.png",
+    src: "/herosection.png",
     alt: "Amar Travels Premium Vehicle"
   }
 };

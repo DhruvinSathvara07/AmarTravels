@@ -33,7 +33,7 @@ export const contactHeroData = {
     }
   ],
   image: {
-    src: "/aboutherosection.png", // Reuses premium hero background image
+    src: "/herosection.png", // Reuses premium hero background image
     alt: "Contact Amar Travels"
   }
 };

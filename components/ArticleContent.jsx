@@ -1,4 +1,4 @@
-export default function BlogContent({ content }) {
+export default function ArticleContent({ content }) {
   if (!content) return null;
 
   return (

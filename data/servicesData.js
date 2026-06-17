@@ -34,7 +34,7 @@ export const servicesHeroData = {
     }
   ],
   image: {
-    src: "/aboutherosection.png", 
+    src: "/herosection.png",
     alt: "Amar Travels Services"
   }
 };

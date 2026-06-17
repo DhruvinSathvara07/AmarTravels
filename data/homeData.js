@@ -29,7 +29,7 @@ export const homeHeroData = {
     },
   ],
   image: {
-    src: "/home-hero-bg.png",
+    src: "/herosection.png",
     alt: "Amar Travels Premium Van"
   }
 };
@@ -37,43 +37,83 @@ export const homeHeroData = {
 export const premiumFleetData = [
   {
     id: 1,
-    title: "Sedan",
-    seats: "4 Seats",
+    title: "New Model Swift Dzire with Carrier",
+    seats: "4 + 1 Seats",
     ac: true,
     price: "12",
-    image: "/vehicle1.png"
+    image: "/swiftdzire.png"
   },
   {
     id: 2,
-    title: "SUV",
-    seats: "6 Seats",
+    title: "New Model Ertiga SUV",
+    seats: "6 + 1 Seats",
     ac: true,
     price: "16",
-    image: "/vehicle2.png"
+    image: "/ertigasuv.png"
   },
   {
     id: 3,
     title: "Innova Crysta",
-    seats: "7 Seats",
+    seats: "7 + 1 Seats",
     ac: true,
     price: "18",
-    image: "/vehicle3.png"
+    image: "/invovacresta.png"
   },
   {
     id: 4,
-    title: "Tempo Traveller",
-    seats: "12 Seats",
+    title: "Kia Carens",
+    seats: "6 + 1 Seats",
     ac: true,
-    price: "24",
-    image: "/vehicle6.png"
+    price: "16",
+    image: "/kiacarens.png"
   },
   {
     id: 5,
-    title: "Luxury Bus",
-    seats: "45 Seats",
+    title: "Tufan Cruiser",
+    seats: "13 Seats",
+    ac: true,
+    price: "18",
+    image: "/tufancruiser.png"
+  },
+  {
+    id: 6,
+    title: "Tempo Traveller",
+    seats: "12 to 20 Seats",
+    ac: true,
+    price: "24",
+    image: "/tempotraveller.png"
+  },
+  {
+    id: 7,
+    title: "Urbania Premium",
+    seats: "16 Seats",
+    ac: true,
+    price: "28",
+    image: "/urbaniapremium.png"
+  },
+  {
+    id: 8,
+    title: "30 Seater Bus",
+    seats: "30 Seats",
     ac: true,
     price: "45",
-    image: "/vehicle8.png"
+    image: "/30seetarbus.png"
+  },
+  {
+    id: 9,
+    title: "56 Seater Bus",
+    seats: "56 Seats",
+    ac: true,
+    price: "60",
+    image: "/56seatarbus.png"
+  },
+  {
+    id: 10,
+    title: "Luxury Cars & Buses",
+    seats: "Any Size",
+    ac: true,
+    price: "-",
+    image: "/alltypebusand luxurycar.png"
   }
 ];
 
@@ -82,34 +122,37 @@ export const pricingPlanData = [
     id: "car",
     name: "Car",
     description: "Standard Hatchback & Sedan",
-    isPopular: false,
-    features: [
-      "4 to 7 Seater Capacity",
-      "300 Km / Day Minimum",
-      "Toll Tax Extra Applicable"
-    ]
+    capacity: "4 to 7 Seater",
+    duration: "300 Km / Day",
+    tollTax: "Applicable",
+    iconName: "Car"
   },
   {
     id: "luxurious",
     name: "Luxurious Car",
     description: "Vellfire, Mercedes, Audi, etc.",
-    isPopular: true,
-    features: [
-      "4 to 7 Seater Capacity",
-      "300 Km / Day Minimum",
-      "Toll Tax Extra Applicable"
-    ]
+    capacity: "4 to 7 Seater",
+    duration: "300 Km / Day",
+    tollTax: "Applicable",
+    iconName: "Crown"
+  },
+  {
+    id: "minibus",
+    name: "Mini Bus",
+    description: "Perfect for medium group travels",
+    capacity: "9 to 16 Seater",
+    duration: "300 Km / Day",
+    tollTax: "Applicable",
+    iconName: "Bus"
   },
   {
     id: "bus",
-    name: "Mini Bus & Bus",
+    name: "Bus",
     description: "Perfect for large group travels",
-    isPopular: false,
-    features: [
-      "9 to 40 Seater Capacity",
-      "300 Km / Day Minimum",
-      "Toll Tax Extra Applicable"
-    ]
+    capacity: "28 to 40 Seater",
+    duration: "300 Km / Day",
+    tollTax: "Applicable",
+    iconName: "BusFront"
   }
 ];
 

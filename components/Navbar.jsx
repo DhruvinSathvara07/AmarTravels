@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import { navbarData } from "@/data/aboutData";
 import { motion, AnimatePresence } from "framer-motion";
@@ -28,7 +28,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navbarClasses = isHomePage && !scrolled
+  const navbarClasses = !scrolled
     ? "bg-transparent border-transparent"
     : "bg-white/70 backdrop-blur-xl border-white/50 shadow-[0_4px_30px_rgba(0,0,0,0.05)]";
 
@@ -72,10 +72,10 @@ export default function Navbar() {
         <div className="hidden lg:flex items-center">
           <Link
             href={cta.href}
-            className="px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-full hover:bg-[#b91c18] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 group"
+            className="px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 group"
           >
+            <Phone className="w-4 h-4" />
             {cta.text}
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
 
@@ -122,10 +122,10 @@ export default function Navbar() {
               <Link
                 href={cta.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full justify-center px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-full hover:bg-[#b91c18] shadow-md transition-all duration-300 flex items-center gap-2 mt-2"
+                className="w-full justify-center px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] shadow-md transition-all duration-300 flex items-center gap-2 mt-2"
               >
+                <Phone className="w-4 h-4" />
                 {cta.text}
-                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </motion.div>

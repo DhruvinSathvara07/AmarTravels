@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import BlogHeader from "./BlogHeader";
-import BlogGrid from "./BlogGrid";
+import ArticleHeader from "./ArticleHeader";
+import ArticleGrid from "./ArticleGrid";
 
-export default function BlogSection({ blogs, limit = 0, showExploreButton = false }) {
+export default function ArticleSection({ blogs, limit = 0, showExploreButton = false }) {
   return (
     <section className="w-full bg-white py-16 md:py-24">
       <div className="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-12 xl:px-16">
-        <BlogHeader />
-        <BlogGrid blogs={blogs} limit={limit} />
+        <ArticleHeader />
+        <ArticleGrid blogs={blogs} limit={limit} />
         
         {showExploreButton && (
           <div className="mt-12 md:mt-16 flex justify-center">

@@ -1,7 +1,7 @@
 import { ArrowRight, Phone } from "lucide-react";
 import Link from "next/link";
 
-export default function BlogSidebarCTA() {
+export default function SidebarCTA() {
   return (
     <div className="sticky top-28 space-y-6">
       {/* Card 1 */}

@@ -28,8 +28,7 @@ export default function WhyChooseSection() {
           </div>
         </div>
 
-        {/* Bottom Row: Stats Grid */}
-        <WhyChooseGrid features={whyChooseUsData} />
+        {/* Stats Grid has been moved to a separate section */}
       </div>
     </section>
   );

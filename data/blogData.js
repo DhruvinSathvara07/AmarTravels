@@ -16,7 +16,7 @@ export const blogHeroData = {
   },
   features: [],
   image: {
-    src: "/aboutherosection.png",
+    src: "/herosection.png",
     alt: "Amar Travels Blog"
     // alt: "Amar Travels Blog"
   }
@@ -29,7 +29,7 @@ export const latestBlogsData = [
     category: "TRAVEL GUIDE",
     title: "Why Road Trips Are the Best Way to Explore India",
     description: "Discover why road trips give you the freedom to explore hidden places and create unforgettable memories.",
-    image: "/vehicle1.png",
+    image: "/swiftdzire.png",
     date: "May 15, 2024",
     readTime: "5 min read",
     author: "Amar Travels Team",
@@ -58,7 +58,7 @@ export const latestBlogsData = [
     category: "TRAVEL TIPS",
     title: "Essential Travel Tips for a Safe & Comfortable Journey",
     description: "Follow these travel tips to ensure a smooth, safe and stress-free journey with your family and friends.",
-    image: "/vehicle2.png",
+    image: "/tempotraveller.png",
     date: "May 15, 2024",
     readTime: "4 min read",
     author: "Amar Travels Team",
@@ -87,7 +87,7 @@ export const latestBlogsData = [
     category: "VEHICLE GUIDE",
     title: "How to Choose the Right Vehicle for Your Trip",
     description: "Choose the perfect vehicle for your trip based on group size, comfort, budget and travel type.",
-    image: "/vehicle3.png",
+    image: "/tufancruiser.png",
     date: "May 5, 2024",
     readTime: "6 min read",
     author: "Amar Travels Team",

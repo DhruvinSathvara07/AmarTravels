@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-export default function BlogDetailsHero({ blog }) {
+export default function ArticleHero({ blog }) {
   return (
     <div className="flex flex-col mb-6">
       {/* Featured Image */}
       <div className="relative w-full h-[260px] md:h-[420px] mb-10 rounded-[32px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
         <Image
-          src={blog.image || "/vehicle1.png"}
+          src={blog.image || "/swiftdzire.png"}
           alt={blog.title}
           fill
           className="object-cover"

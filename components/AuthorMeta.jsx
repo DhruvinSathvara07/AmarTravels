@@ -1,6 +1,6 @@
 import { Calendar, Clock, User } from "lucide-react";
 
-export default function BlogAuthorMeta({ date, readTime, author }) {
+export default function AuthorMeta({ date, readTime, author }) {
   return (
     <div className="flex flex-wrap items-center gap-6 mt-6 mb-10 text-[14px] font-medium">
       <div className="flex items-center gap-2">

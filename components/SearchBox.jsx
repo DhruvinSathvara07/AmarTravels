@@ -2,11 +2,11 @@
 
 import { MapPin, Calendar, User, ChevronDown, ArrowRight, Minus } from "lucide-react";
 
-export default function BookingSearchBox() {
+export default function SearchBox() {
   return (
     <div className="w-full relative z-30 flex justify-center -mt-8 sm:-mt-10 md:-mt-12 lg:-mt-14 mb-10 md:mb-16">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
-        <div className="bg-white rounded-3xl shadow-[0_20px_40px_rgba(0,0,0,0.08)] py-4 px-6 md:py-6 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-6 border border-gray-100">
+        <div className="bg-white rounded-3xl py-4 px-6 md:py-6 md:px-8 flex flex-col lg:flex-row items-center justify-between gap-6 border border-gray-100">
           
           {/* From */}
           <div className="flex flex-col w-full lg:w-1/4 lg:pr-6 lg:border-r border-gray-100 relative group cursor-pointer">
@@ -68,7 +68,7 @@ export default function BookingSearchBox() {
 
           {/* Search Button */}
           <div className="w-full lg:w-auto mt-4 lg:mt-0 flex-shrink-0">
-            <button className="w-full lg:w-auto bg-[#DC241C] hover:bg-[#b91c18] text-white rounded-xl px-8 py-4 flex items-center justify-center gap-3 font-semibold text-sm transition-all duration-300 shadow-[0_4px_14px_rgba(220,36,28,0.4)] hover:shadow-[0_6px_20px_rgba(220,36,28,0.6)] hover:-translate-y-0.5">
+            <button className="w-full lg:w-auto bg-[#DC241C] hover:bg-[#b91c18] text-white rounded-xl px-8 py-4 flex items-center justify-center gap-3 font-semibold text-sm transition-all duration-300">
               Check Availability
               <ArrowRight size={18} />
             </button>

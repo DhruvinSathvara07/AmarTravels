@@ -43,10 +43,10 @@ export default function ReviewSection() {
   };
 
   return (
-    <section className="relative w-full bg-white pt-4 pb-16 lg:pt-8 lg:pb-20 overflow-hidden z-10">
-      {/* Premium subtle radial glows */}
-      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-red-50/50 rounded-full blur-[130px] pointer-events-none -z-10" />
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 translate-x-1/2 w-[450px] h-[450px] bg-blue-50/20 rounded-full blur-[110px] pointer-events-none -z-10" />
+    <section className="relative w-full pt-4 pb-16 lg:pt-8 lg:pb-20 overflow-hidden z-10"
+             style={{ backgroundImage: "url('/reviewsectionbackgroundimage.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+      {/* Dark or light overlay for readability if needed, though we can start with just the image. The user just said "use this image as background". Let's add a white/transparent overlay if text needs it, or just a simple overlay. Actually, let's keep it simple first. */}
+      <div className="absolute inset-0 bg-white/80 -z-10" />
 
       <div className="max-w-[1440px] w-full mx-auto px-6 md:px-10 lg:px-12 xl:px-16">
         <motion.div
