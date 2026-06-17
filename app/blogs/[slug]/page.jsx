@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { latestBlogsData } from "@/data/blogData";
-import BlogLayout from "@/components/blog/BlogLayout";
+import Article from "@/components/Article";
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -28,7 +28,7 @@ export default async function BlogDetailsPage({ params }) {
 
   return (
     <main className="w-full bg-white">
-      <BlogLayout blog={blog} />
+      <Article blog={blog} />
     </main>
   );
 }
