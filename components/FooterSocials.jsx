@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 export default function FooterSocials() {
   const socials = [
@@ -19,11 +19,6 @@ export default function FooterSocials() {
       name: "WhatsApp",
       icon: <FaWhatsapp className="w-5 h-5" />,
       href: "https://wa.me/919676543210",
-    },
-    {
-      name: "YouTube",
-      icon: <FaYoutube className="w-5 h-5" />,
-      href: "https://youtube.com",
     },
   ];
 

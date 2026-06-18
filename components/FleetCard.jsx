@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { Users, Car, Snowflake, PhoneCall } from "lucide-react";
+import { handleContactAction } from "@/utils/contactUtils";
 
 export default function FleetCard({ vehicle, index }) {
   return (
@@ -54,13 +55,14 @@ export default function FleetCard({ vehicle, index }) {
           )}
         </div>
 
-        <Link 
-          href="/booking"
-          className="mt-auto mx-auto w-full inline-flex items-center justify-center gap-2.5 bg-transparent border border-[#DC241C] text-[#DC241C] rounded-lg px-6 py-3 text-[15px] font-bold hover:bg-[#DC241C] hover:text-white transition-all duration-300"
+        <button 
+          onClick={handleContactAction}
+          aria-label="Book Now via Amar Travels"
+          className="mt-auto mx-auto w-full inline-flex items-center justify-center gap-2.5 bg-transparent border border-[#DC241C] text-[#DC241C] rounded-lg px-6 py-3 text-[15px] font-bold hover:bg-[#DC241C] hover:text-white transition-all duration-300 cursor-pointer"
         >
           <PhoneCall className="w-5 h-5" />
           Book Now
-        </Link>
+        </button>
       </div>
     </motion.div>
   );

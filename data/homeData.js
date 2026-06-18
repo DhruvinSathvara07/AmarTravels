@@ -11,7 +11,7 @@ export const homeHeroData = {
   },
   description: "Car rental, bus rental, and tours travels in Ahmedabad and Gujarat.",
   cta: {
-    text: "Book Your Ride",
+    text: "Call Now",
     href: "/booking"
   },
   features: [

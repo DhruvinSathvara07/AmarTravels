@@ -1,48 +1,118 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+
 export default function FloatingSocials() {
+  const [showWaTooltip, setShowWaTooltip] = useState(false);
+  const [showCallTooltip, setShowCallTooltip] = useState(false);
+
+  // Tooltip auto-show logic with different timings
+  useEffect(() => {
+    const waInterval = setInterval(() => {
+      setShowWaTooltip(true);
+      setTimeout(() => setShowWaTooltip(false), 2500);
+    }, 6000);
+
+    const callTimeout = setTimeout(() => {
+      setShowCallTooltip(true);
+      setTimeout(() => setShowCallTooltip(false), 2500);
+      
+      const callInterval = setInterval(() => {
+        setShowCallTooltip(true);
+        setTimeout(() => setShowCallTooltip(false), 2500);
+      }, 6000);
+      
+      return () => clearInterval(callInterval);
+    }, 3000); // 3 seconds offset
+    
+    return () => {
+      clearInterval(waInterval);
+      clearTimeout(callTimeout);
+    };
+  }, []);
+
+  const WHATSAPP_NUMBER = "919725409908";
+  const PHONE_NUMBER = "+919725409908";
+  
+  const WHATSAPP_MESSAGE = `Hello Amar Travels,\n\nI am interested in your vehicle rental and tours & travels services.\n\nPlease share details.`;
+
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
+  const callLink = `tel:${PHONE_NUMBER}`;
+
+  const fastRingAnimation = {
+    rotate: [
+      0, 20, -20, 20, -20, 15, -15, 10, -10, 5, -5, 0, // Fast ringing
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 // Pause
+    ],
+    scale: [
+      1, 1.1, 1.1, 1.1, 1.1, 1.05, 1.05, 1.02, 1.02, 1.01, 1.01, 1, 
+      1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+    ],
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "linear"
+    }
+  };
+
   return (
     <>
-      {/* Instagram - Floating Left */}
+      {/* WhatsApp - Left */}
       <a
-        href="https://instagram.com"
+        href={waLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed left-4 md:left-6 bottom-4 md:bottom-8 z-50 flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-2xl md:rounded-[20px] bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] shadow-lg hover:scale-110 hover:-translate-y-1 transition-all duration-300 group"
-        aria-label="Instagram"
+        aria-label="WhatsApp Now"
+        className="fixed left-6 bottom-6 z-[999] flex items-center justify-center bg-[#25D366] text-white rounded-full h-[60px] w-[60px] md:h-[72px] md:w-[72px] shadow-[0_8px_25px_rgba(37,211,102,0.4)] cursor-pointer"
       >
-        <svg 
-          xmlns="http://www.w3.org/2000/svg" 
-          viewBox="0 0 24 24" 
-          fill="none" 
-          stroke="currentColor" 
-          strokeWidth="2" 
-          strokeLinecap="round" 
-          strokeLinejoin="round" 
-          className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:opacity-90"
-        >
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-        </svg>
+        <AnimatePresence>
+          {showWaTooltip && (
+            <motion.div
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 5 }}
+              transition={{ duration: 0.2 }}
+              className="absolute -top-[45px] bg-[#1a1a1a] text-white text-[13px] font-medium px-3 py-1.5 rounded shadow-lg whitespace-nowrap pointer-events-none"
+            >
+              WhatsApp Now
+              {/* Tooltip Triangle */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[5px] border-transparent border-t-[#1a1a1a]" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+        
+        <motion.div animate={fastRingAnimation}>
+          <FaWhatsapp className="w-8 h-8 md:w-10 md:h-10" />
+        </motion.div>
       </a>
 
-      {/* WhatsApp - Floating Right */}
+      {/* Call - Right */}
       <a
-        href="https://wa.me/919876543210"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed right-4 md:right-6 bottom-4 md:bottom-8 z-50 flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] shadow-lg hover:scale-110 hover:-translate-y-1 transition-all duration-300 group"
-        aria-label="WhatsApp"
+        href={callLink}
+        aria-label="Call Now"
+        className="fixed right-6 bottom-6 z-[999] flex items-center justify-center bg-[#ef2020] text-white rounded-full h-[60px] w-[60px] md:h-[72px] md:w-[72px] shadow-[0_8px_25px_rgba(239,32,32,0.4)] cursor-pointer"
       >
-        <svg 
-          viewBox="0 0 24 24" 
-          fill="currentColor" 
-          xmlns="http://www.w3.org/2000/svg" 
-          className="w-7 h-7 md:w-9 md:h-9 text-white group-hover:opacity-90"
-        >
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-        </svg>
+        <AnimatePresence>
+          {showCallTooltip && (
+            <motion.div
+              initial={{ opacity: 0, y: 5 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 5 }}
+              transition={{ duration: 0.2 }}
+              className="absolute -top-[45px] bg-[#1a1a1a] text-white text-[13px] font-medium px-3 py-1.5 rounded shadow-lg whitespace-nowrap pointer-events-none"
+            >
+              Call Now
+              {/* Tooltip Triangle */}
+              <div className="absolute top-full left-1/2 -translate-x-1/2 border-[5px] border-transparent border-t-[#1a1a1a]" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <motion.div animate={fastRingAnimation}>
+          <FaPhoneAlt className="w-6 h-6 md:w-8 md:h-8" />
+        </motion.div>
       </a>
     </>
   );

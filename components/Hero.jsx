@@ -23,7 +23,7 @@ export default function Hero({ data }) {
   };
 
   return (
-    <section className="relative w-full min-h-[80vh] md:min-h-[90vh] lg:min-h-screen flex items-center pt-24 pb-32 lg:pb-0 overflow-hidden">
+    <section className="relative w-full min-h-[80vh] md:min-h-[90vh] lg:min-h-screen flex items-center pt-24 pb-32 lg:pt-24 lg:pb-32 overflow-hidden">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
@@ -43,7 +43,7 @@ export default function Hero({ data }) {
         
         {/* Left Side Content */}
         <motion.div 
-          className="w-full lg:w-[60%] xl:w-[50%] flex flex-col gap-5 pt-10 lg:pt-0"
+          className="w-full lg:w-[80%] xl:w-[75%] flex flex-col gap-5 pt-10 lg:pt-0"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -67,7 +67,7 @@ export default function Hero({ data }) {
 
           {/* Description */}
           {description && (
-            <motion.p variants={itemVariants} className="text-dark-heading text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-[90%] mt-2">
+            <motion.p variants={itemVariants} className="text-dark-heading text-sm sm:text-base md:text-lg font-medium leading-relaxed mt-2 max-w-full lg:max-w-[85%] xl:max-w-[80%] line-clamp-3">
               {description}
             </motion.p>
           )}
