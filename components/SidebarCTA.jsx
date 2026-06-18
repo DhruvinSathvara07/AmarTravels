@@ -1,5 +1,6 @@
 import { ArrowRight, Phone } from "lucide-react";
 import Link from "next/link";
+import { handleContactAction } from "@/utils/contactUtils";
 
 export default function SidebarCTA() {
   return (
@@ -12,13 +13,14 @@ export default function SidebarCTA() {
         <p className="text-[15px] leading-[1.8] text-[#5F6C7B] mb-8">
           Book your vehicle with Amar Travels and travel in comfort.
         </p>
-        <Link 
-          href="#book"
-          className="inline-flex items-center justify-center w-full bg-[#DC241C] text-white rounded-full py-4 px-6 font-semibold hover:bg-[#b81d17] hover:shadow-[0_8px_20px_rgba(220,36,28,0.3)] transition-all duration-300 group"
+        <button 
+          onClick={handleContactAction}
+          aria-label="Contact Amar Travels"
+          className="inline-flex items-center justify-center w-full bg-[#DC241C] text-white rounded-full py-4 px-6 font-semibold hover:bg-[#b81d17] hover:shadow-[0_8px_20px_rgba(220,36,28,0.3)] transition-all duration-300 group cursor-pointer"
         >
           Book Your Ride 
           <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-        </Link>
+        </button>
       </div>
 
       {/* Card 2 */}

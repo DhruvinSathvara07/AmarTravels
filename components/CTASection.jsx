@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
+import { handleContactAction } from "@/utils/contactUtils";
 
 export default function CTASection() {
   return (
@@ -22,21 +23,23 @@ export default function CTASection() {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-              <Link 
-                href="/booking"
-                className="group inline-flex items-center justify-center gap-2 bg-white text-[#DC241C] px-8 py-4 rounded-full font-bold text-base hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 w-full sm:w-auto"
+              <button 
+                onClick={handleContactAction}
+                aria-label="Contact Amar Travels"
+                className="group inline-flex items-center justify-center gap-2 bg-white text-[#DC241C] px-8 py-4 rounded-full font-bold text-base hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 w-full sm:w-auto cursor-pointer"
               >
                 Book Now
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </button>
               
-              <Link 
-                href="/booking/call"
-                className="group inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
+              <button 
+                onClick={handleContactAction}
+                aria-label="Contact Amar Travels"
+                className="group inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-3.5 rounded-full font-bold text-base hover:bg-white/10 transition-all duration-300 w-full sm:w-auto cursor-pointer"
               >
                 <Phone size={20} />
                 Call Us
-              </Link>
+              </button>
             </div>
           </div>
           

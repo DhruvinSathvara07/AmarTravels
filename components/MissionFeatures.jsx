@@ -23,7 +23,7 @@ export default function MissionFeatures() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-6 sm:gap-y-0 w-full"
+      className="grid grid-cols-2 lg:grid-cols-4 gap-y-0 w-full"
     >
       {features.map((feature, idx) => (
         <div key={idx} className={`${feature.borderClass} w-full`}>

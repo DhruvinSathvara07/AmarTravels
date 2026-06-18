@@ -66,29 +66,24 @@ export default function Footer() {
 
       <div className="max-w-[1440px] w-full mx-auto px-6 md:px-10 lg:px-12 xl:px-16 relative z-10">
         {/* INNER FOOTER LAYOUT */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           {/* COLUMN 1 - BRAND */}
-          <motion.div variants={columnVariants} className="sm:col-span-2 lg:col-span-1">
+          <motion.div variants={columnVariants} className="sm:col-span-2 lg:col-span-3">
             <FooterBrand />
           </motion.div>
 
           {/* COLUMN 2 - QUICK LINKS */}
-          <motion.div variants={columnVariants}>
+          <motion.div variants={columnVariants} className="lg:col-span-2">
             <FooterLinks />
           </motion.div>
 
           {/* COLUMN 3 - SERVICES */}
-          <motion.div variants={columnVariants}>
+          <motion.div variants={columnVariants} className="sm:col-span-2 lg:col-span-4">
             <FooterServices />
           </motion.div>
 
-          {/* COLUMN 4 - SUPPORT */}
-          <motion.div variants={columnVariants}>
-            <FooterSupport />
-          </motion.div>
-
-          {/* COLUMN 5 - CONTACT INFO */}
-          <motion.div variants={columnVariants}>
+          {/* COLUMN 4 - CONTACT INFO */}
+          <motion.div variants={columnVariants} className="sm:col-span-2 lg:col-span-3">
             <FooterContact />
           </motion.div>
         </div>

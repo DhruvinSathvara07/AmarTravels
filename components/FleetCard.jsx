@@ -40,7 +40,7 @@ export default function FleetCard({ vehicle, index }) {
         <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 mb-6 font-poppins flex-grow">
           <div className="flex items-center gap-1.5">
             <Users className="w-4 h-4 text-[#DC241C]" />
-            <span>{vehicle.seats}</span>
+            <span>{vehicle.seats === 'Any Size' ? vehicle.seats : `${vehicle.seats} Seater`}</span>
           </div>
           <div className="flex items-center gap-1.5">
             <Car className="w-4 h-4 text-[#DC241C]" />

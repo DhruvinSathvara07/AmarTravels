@@ -43,14 +43,14 @@ export const contactInfoData = [
     id: "phone",
     iconName: "PhoneCall",
     heading: "Phone",
-    mainText: "+91 98765 43210",
+    mainText: "+91 97254 09908",
     smallText: "Mon - Sun (24/7)"
   },
   {
     id: "email",
     iconName: "Mail",
     heading: "Email",
-    mainText: "info@amartravels.com",
+    mainText: "kkchaudhary20190@gmail.com",
     smallText: "We reply within minutes"
   },
   {

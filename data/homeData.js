@@ -9,7 +9,7 @@ export const homeHeroData = {
     subText: "Comfort & ",
     highlightedText: "Style."
   },
-  description: "Experience the best travel services across Gujarat with our premium fleet. We ensure your journeys are safe, comfortable, and truly memorable.",
+  description: "Car rental, bus rental, and tours travels in Ahmedabad and Gujarat.",
   cta: {
     text: "Book Your Ride",
     href: "/booking"
@@ -124,7 +124,7 @@ export const pricingPlanData = [
     description: "Standard Hatchback & Sedan",
     capacity: "4 to 7 Seater",
     duration: "300 Km / Day",
-    tollTax: "Applicable",
+    tollTax: "Extra Charge",
     iconName: "Car"
   },
   {
@@ -133,7 +133,7 @@ export const pricingPlanData = [
     description: "Vellfire, Mercedes, Audi, etc.",
     capacity: "4 to 7 Seater",
     duration: "300 Km / Day",
-    tollTax: "Applicable",
+    tollTax: "Extra Charge",
     iconName: "Crown"
   },
   {
@@ -142,16 +142,16 @@ export const pricingPlanData = [
     description: "Perfect for medium group travels",
     capacity: "9 to 16 Seater",
     duration: "300 Km / Day",
-    tollTax: "Applicable",
+    tollTax: "Extra Charge",
     iconName: "Bus"
   },
   {
     id: "bus",
     name: "Bus",
     description: "Perfect for large group travels",
-    capacity: "28 to 40 Seater",
+    capacity: "30 to 56 Seater",
     duration: "300 Km / Day",
-    tollTax: "Applicable",
+    tollTax: "Extra Charge",
     iconName: "BusFront"
   }
 ];
@@ -159,39 +159,39 @@ export const pricingPlanData = [
 export const premiumServicesData = [
   {
     id: 1,
-    title: "Airport Transfers",
-    description: "Hassle-free airport pickup & drop",
-    iconName: "Plane"
+    title: "Transport Service",
+    description: "Car rental, bus rental and transport services in Ahmedabad and across Gujarat for local and outstation travel.",
+    iconName: "Car"
   },
   {
     id: 2,
-    title: "Corporate Travel",
-    description: "Reliable travel support for businesses",
-    iconName: "Briefcase"
+    title: "Tours & Travels Service",
+    description: "Customized tours and travels services for Gujarat tours, family trips, group tours and outstation journeys.",
+    iconName: "MapPin"
   },
   {
     id: 3,
-    title: "Wedding Transport",
-    description: "Luxury vehicles for your special occasions",
+    title: "Wedding Car Rental",
+    description: "Premium wedding car rental services in Ahmedabad for weddings, events and special occasions.",
     iconName: "Heart"
   },
   {
     id: 4,
-    title: "Group Travel",
-    description: "Comfortable travel for large groups",
+    title: "Family & Group Tours",
+    description: "Comfortable vehicles for family vacations, group tours, pilgrimages and holiday trips across Gujarat.",
     iconName: "Users"
   },
   {
     id: 5,
-    title: "Outstation Trips",
-    description: "Explore Gujarat & beyond with us",
-    iconName: "MapPin"
+    title: "Car & Bus Rental",
+    description: "Car rental, luxury bus rental, SUV rental and travel vehicles available for every travel requirement.",
+    iconName: "Briefcase"
   },
   {
     id: 6,
-    title: "Event Transport",
-    description: "Perfect for events and celebrations",
-    iconName: "CalendarHeart"
+    title: "Luxury Bus & Travel Service",
+    description: "Luxury buses, Ertiga, Innova Crysta, Urbania and premium travel vehicles for tours, corporate travel and long-distance journeys.",
+    iconName: "Crown"
   }
 ];
 

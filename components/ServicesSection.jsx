@@ -9,42 +9,42 @@ const servicesData = [
   {
     id: 1,
     title: "Transport Service",
-    description: "Reliable and comfortable transport solutions for all your travel needs.",
+    description: "Car rental, bus rental and transport services in Ahmedabad and across Gujarat for local and outstation travel.",
     icon: "Bus",
     image: "/serviceimage1.png"
   },
   {
     id: 2,
-    title: "Tour Packages",
-    description: "Customized Gujarat and outstation tour packages for memorable journeys.",
+    title: "Tours & Travels Service",
+    description: "Customized tours and travels services for Gujarat tours, family trips, group tours and outstation journeys.",
     icon: "Briefcase",
     image: "/serviceimage2.png"
   },
   {
     id: 3,
-    title: "Wedding Car",
-    description: "Premium luxury cars available for weddings and special occasions.",
+    title: "Wedding Car Rental",
+    description: "Premium wedding car rental services in Ahmedabad for weddings, events and special occasions.",
     icon: "Car",
     image: "/serviceimage3.png"
   },
   {
     id: 4,
-    title: "Family Trips",
-    description: "Comfortable and safe vehicles for family vacations and group travel.",
+    title: "Family & Group Tours",
+    description: "Comfortable vehicles for family vacations, group tours, pilgrimages and holiday trips across Gujarat.",
     icon: "Users",
     image: "/serviceimage4.png"
   },
   {
     id: 5,
-    title: "All Type Vehicles Available",
-    description: "Sedans, SUVs, Tempo Travellers, Urbania, Luxury Cars and Buses available.",
+    title: "Car & Bus Rental",
+    description: "Car rental, luxury bus rental, SUV rental and travel vehicles available for every travel requirement.",
     icon: "CarFront",
     image: "/serviceimage5.png"
   },
   {
     id: 6,
-    title: "Luxury Bus, Creta, Ertiga & Tours Service",
-    description: "Luxury buses and premium travel vehicles available for tours and long trips.",
+    title: "Luxury Bus & Travel Service",
+    description: "Luxury buses, Ertiga, Innova Crysta, Urbania and premium travel vehicles for tours, corporate travel and long-distance journeys.",
     icon: "BusFront",
     image: "/serviceimage6.png"
   }

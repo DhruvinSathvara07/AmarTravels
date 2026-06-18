@@ -42,7 +42,7 @@ export const heroData = {
     highlightedText: "Passion.",
     className: "max-w-[500px] text-4xl sm:text-[46px] lg:text-[46px]"
   },
-  description: "Amar Travels is a trusted name in travel and transportation across Gujarat. We are committed to providing safe, comfortable and memorable journeys with premium vehicles and exceptional service.",
+  description: "Amar Travels is a trusted tours & travels in Ahmedabad offering car,buses, luxury vehicles, tour travel, across Gujarat. With buses and cars comfortable with professional drivers, and reliable service, we make every journey safe, memorable and comfortable",
   cta: {
     text: "Book Now",
     href: "/booking"
@@ -122,26 +122,26 @@ export const storyData = {
 export const missionData = {
   label: "OUR MISSION",
   heading: "Making Every Journey\nMeaningful",
-  description: "To deliver exceptional travel experiences through safety, comfort, punctuality and a customer-first approach.",
+  description: "To make travel easy and comfortable with reliable car rental, bus rental, and tours & travels services across Ahmedabad and Gujarat for every journey and occasion.",
   backgroundImage: "/ctabackgroundimage.png",
   features: [
     {
       Icon: ShieldCheck,
       title: "Safety",
       description: "Ensuring secure and worry-free travel.",
-      borderClass: "border-b sm:border-r border-white/10 lg:border-b-0",
+      borderClass: "border-b border-r border-white/10 lg:border-b-0",
     },
     {
       Icon: CarFront,
       title: "Comfort",
       description: "Premium vehicles for a relaxed journey.",
-      borderClass: "border-b lg:border-r border-white/10 sm:border-r-0 lg:border-b-0",
+      borderClass: "border-b border-white/10 lg:border-b-0 lg:border-r",
     },
     {
       Icon: TimerReset,
       title: "Punctuality",
       description: "On-time service, every time.",
-      borderClass: "border-b sm:border-b-0 sm:border-r border-white/10 lg:border-b-0 lg:border-r",
+      borderClass: "border-r border-white/10 lg:border-r",
     },
     {
       Icon: BadgeCheck,
@@ -221,7 +221,7 @@ export const footerData = {
   socials: [
     { name: "Facebook", href: "https://facebook.com" },
     { name: "Instagram", href: "https://instagram.com" },
-    { name: "WhatsApp", href: "https://wa.me/919676543210" },
+    { name: "WhatsApp", href: "https://wa.me/919725409908" },
     { name: "YouTube", href: "https://youtube.com" }
   ],
   quickLinks: {
@@ -229,39 +229,40 @@ export const footerData = {
     links: [
       { name: "Home", href: "/" },
       { name: "Booking", href: "/booking" },
-      { name: "Packages", href: "/packages" },
+      { name: "About", href: "/about" },
       { name: "Services", href: "/services" },
-      { name: "Gallery", href: "/gallery" },
-      { name: "About Us", href: "/about" },
-      { name: "Contact Us", href: "/contact" }
+      { name: "Blogs", href: "/blogs" },
+      { name: "Contact", href: "/contact" }
     ]
   },
   services: {
     title: "Our Services",
     links: [
-      { name: "Airport Transfers", href: "/services#airport" },
-      { name: "Corporate Travel", href: "/services#corporate" },
-      { name: "Group Travel", href: "/services#group" },
-      { name: "Wedding Transport", href: "/services#wedding" },
-      { name: "Outstation Trips", href: "/services#outstation" },
-      { name: "Event Transport", href: "/services#event" }
+      { name: "Transport Service", href: "/services#transport" },
+      { name: "Tours & Travels Service", href: "/services#tours" },
+      { name: "Wedding Car Rental", href: "/services#wedding" },
+      { name: "Family & Group Tours", href: "/services#family-group" },
+      { name: "Car & Bus Rental", href: "/services#rental" },
+      { name: "Luxury Bus & Travel Service", href: "/services#luxury" }
     ]
   },
   support: {
     title: "Support",
     links: [
-      { name: "About Us", href: "/about" },
+      { name: "Home", href: "/" },
+      { name: "Booking", href: "/booking" },
+      { name: "About", href: "/about" },
+      { name: "Services", href: "/services" },
       { name: "Blogs", href: "/blogs" },
-      { name: "Contact Us", href: "/contact" },
-      { name: "Privacy Policy", href: "/privacy-policy" },
-      { name: "Terms & Conditions", href: "/terms" }
+      { name: "Contact", href: "/contact" }
     ]
   },
   contact: {
     title: "Contact Info",
     items: [
-      { Icon: Phone, value: "+91 96765 43210", href: "tel:+919676543210" },
-      { Icon: Mail, value: "info@amartravels.com", href: "mailto:info@amartravels.com" },
+      { Icon: Phone, value: "+91 97254 09908", href: "tel:+919725409908" },
+      { Icon: Phone, value: "+91 97242 49908", href: "tel:+919724249908" },
+      { Icon: Mail, value: "kkchaudhary20190@gmail.com", href: "mailto:kkchaudhary20190@gmail.com" },
       { Icon: MapPin, value: "Ahmedabad, Gujarat, India", href: "https://maps.google.com/?q=Ahmedabad,+Gujarat,+India" }
     ]
   },
