@@ -13,7 +13,7 @@ export default function MissionSection() {
           
           {/* Background Image using Next.js Image Component */}
           <Image
-            src="/ctabackgroundimage.png"
+            src="/ctabackgroundimage.webp"
             alt="Amar Travels Mission Background"
             fill
             sizes="(max-w-1440px) 100vw, 1440px"

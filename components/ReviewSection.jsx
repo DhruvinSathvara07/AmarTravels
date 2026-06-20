@@ -44,7 +44,7 @@ export default function ReviewSection() {
 
   return (
     <section className="relative w-full pt-4 pb-16 lg:pt-8 lg:pb-20 overflow-hidden z-10"
-             style={{ backgroundImage: "url('/reviewsectionbackgroundimage.png')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
+             style={{ backgroundImage: "url('/reviewsectionbackgroundimage.webp')", backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed' }}>
       {/* Dark or light overlay for readability if needed, though we can start with just the image. The user just said "use this image as background". Let's add a white/transparent overlay if text needs it, or just a simple overlay. Actually, let's keep it simple first. */}
       <div className="absolute inset-0 bg-white/80 -z-10" />
 

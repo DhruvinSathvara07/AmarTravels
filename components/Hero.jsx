@@ -27,7 +27,7 @@ export default function Hero({ data }) {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src={image?.src || "/herosection.png"}
+          src={image?.src || "/herosection.webp"}
           alt={image?.alt || "Amar Travels landscape background"}
           fill
           priority

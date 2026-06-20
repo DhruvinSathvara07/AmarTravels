@@ -49,7 +49,7 @@ export default function Pricing() {
               <div className="col-span-1 pl-4">Vehicle Type</div>
               <div className="col-span-1">Seating Capacity</div>
               <div className="col-span-1">Minimum Duration</div>
-              <div className="col-span-1">Toll Tax & Parking</div>
+              <div className="col-span-1">Toll Tax, Parking, Border Tax & Driver Allowance</div>
             </div>
 
             {/* Table Body */}
@@ -86,7 +86,7 @@ export default function Pricing() {
 
                     {/* Toll Tax */}
                     <div className="col-span-1 flex flex-col md:block">
-                      <span className="md:hidden text-xs text-slate-400 font-medium uppercase mb-1">Toll Tax & Parking</span>
+                      <span className="md:hidden text-xs text-slate-400 font-medium uppercase mb-1">Toll Tax, Parking, Border Tax & Driver Allowance</span>
                       <span className="text-slate-700 font-medium text-[15px]">{plan.tollTax}</span>
                     </div>
                   </div>

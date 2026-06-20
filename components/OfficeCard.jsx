@@ -39,7 +39,7 @@ export default function OfficeCard() {
 
       {/* Building Illustration */}
       <Image
-        src="/buildingiconimage.png"
+        src="/buildingiconimage.webp"
         alt="Office Building"
         width={220}
         height={220}

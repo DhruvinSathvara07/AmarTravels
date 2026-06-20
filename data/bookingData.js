@@ -5,7 +5,7 @@ export const bookingVehicles = [
     seats: "4 + 1",
     type: "Sedan",
     ac: true,
-    image: "/swiftdzire.png"
+    image: "/swiftdzire.webp"
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const bookingVehicles = [
     seats: "6 + 1",
     type: "SUV / MPV",
     ac: true,
-    image: "/ertigasuv.png"
+    image: "/ertigasuv.webp"
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const bookingVehicles = [
     seats: "7 + 1",
     type: "SUV",
     ac: true,
-    image: "/invovacresta.png"
+    image: "/invovacresta.webp"
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const bookingVehicles = [
     seats: "6 + 1",
     type: "Premium MPV",
     ac: true,
-    image: "/kiacarens.png"
+    image: "/kiacarens.webp"
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const bookingVehicles = [
     seats: "13",
     type: "Utility Vehicle",
     ac: true,
-    image: "/tufancruiser.png"
+    image: "/tufancruiser.webp"
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const bookingVehicles = [
     seats: "12 to 20",
     type: "AC Traveller",
     ac: true,
-    image: "/tempotraveller.png"
+    image: "/tempotraveller.webp"
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const bookingVehicles = [
     seats: "16",
     type: "Premium Traveller",
     ac: true,
-    image: "/urbaniapremium.png"
+    image: "/urbaniapremium.webp"
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const bookingVehicles = [
     seats: "30",
     type: "AC Bus",
     ac: true,
-    image: "/30seetarbus.png"
+    image: "/30seetarbus.webp"
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ export const bookingVehicles = [
     seats: "56",
     type: "Luxury Bus",
     ac: true,
-    image: "/56seatarbus.png"
+    image: "/56seatarbus.webp"
   },
   {
     id: 10,
@@ -77,6 +77,6 @@ export const bookingVehicles = [
     seats: "Any Size",
     type: "All Categories",
     ac: true,
-    image: "/alltypebusand luxurycar.png"
+    image: "/alltypebusand luxurycar.webp"
   }
 ];

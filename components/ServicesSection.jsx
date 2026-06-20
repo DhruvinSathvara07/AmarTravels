@@ -11,42 +11,42 @@ const servicesData = [
     title: "Transport Service",
     description: "Car rental, bus rental and transport services in Ahmedabad and across Gujarat for local and outstation travel.",
     icon: "Bus",
-    image: "/serviceimage1.png"
+    image: "/serviceimage1.webp"
   },
   {
     id: 2,
     title: "Tours & Travels Service",
     description: "Customized tours and travels services for Gujarat tours, family trips, group tours and outstation journeys.",
     icon: "Briefcase",
-    image: "/serviceimage2.png"
+    image: "/serviceimage2.webp"
   },
   {
     id: 3,
     title: "Wedding Car Rental",
     description: "Premium wedding car rental services in Ahmedabad for weddings, events and special occasions.",
     icon: "Car",
-    image: "/serviceimage3.png"
+    image: "/serviceimage3.webp"
   },
   {
     id: 4,
     title: "Family & Group Tours",
     description: "Comfortable vehicles for family vacations, group tours, pilgrimages and holiday trips across Gujarat.",
     icon: "Users",
-    image: "/serviceimage4.png"
+    image: "/serviceimage4.webp"
   },
   {
     id: 5,
     title: "Car & Bus Rental",
     description: "Car rental, luxury bus rental, SUV rental and travel vehicles available for every travel requirement.",
     icon: "CarFront",
-    image: "/serviceimage5.png"
+    image: "/serviceimage5.webp"
   },
   {
     id: 6,
     title: "Luxury Bus & Travel Service",
     description: "Luxury buses, Ertiga, Innova Crysta, Urbania and premium travel vehicles for tours, corporate travel and long-distance journeys.",
     icon: "BusFront",
-    image: "/serviceimage6.png"
+    image: "/serviceimage6.webp"
   }
 ];
 

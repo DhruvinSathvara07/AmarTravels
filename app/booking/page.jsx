@@ -15,7 +15,7 @@ export default function BookingPage() {
     },
     description: "Looking for car rental, bus rental, or tours and travels in Ahmedabad and Gujarat? Amar Travels offers comfortable vehicles for family trips, weddings, business travel, and group tours across Gujarat and India.",
     image: {
-      src: "/herosection.png",
+      src: "/herosection.webp",
       alt: "Gujarat landscape background"
     }
   };

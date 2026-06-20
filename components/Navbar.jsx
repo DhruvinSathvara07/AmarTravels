@@ -7,6 +7,7 @@ import { ArrowRight, Phone } from "lucide-react";
 import { useState, useEffect } from "react";
 import { navbarData } from "@/data/aboutData";
 import { motion, AnimatePresence } from "framer-motion";
+import { handleContactAction } from "@/utils/contactUtils";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -71,13 +72,13 @@ export default function Navbar() {
 
         {/* Action Button (Desktop) */}
         <div className="hidden lg:flex items-center">
-          <Link
-            href={cta.href}
-            className="px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 group"
+          <button
+            onClick={handleContactAction}
+            className="px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] hover:-translate-y-0.5 shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 group cursor-pointer"
           >
             <Phone className="w-4 h-4" />
             {cta.text}
-          </Link>
+          </button>
         </div>
 
         {/* Mobile Toggle */}
@@ -120,14 +121,16 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              <Link
-                href={cta.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full justify-center px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] shadow-md transition-all duration-300 flex items-center gap-2 mt-2"
+              <button
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleContactAction(e);
+                }}
+                className="w-full justify-center px-6 py-2.5 bg-[#DC241C] text-white text-[14.5px] font-semibold rounded-lg hover:bg-[#b91c18] shadow-md transition-all duration-300 flex items-center gap-2 mt-2 cursor-pointer"
               >
                 <Phone className="w-4 h-4" />
                 {cta.text}
-              </Link>
+              </button>
             </div>
           </motion.div>
         )}

@@ -20,7 +20,7 @@ export default function WhyChooseSection() {
           {/* Image Right */}
           <div className="relative w-full h-[250px] sm:h-[280px] lg:h-[300px] rounded-3xl overflow-hidden shadow-lg">
             <Image 
-              src="/serviceimage6.png" 
+              src="/serviceimage6.webp" 
               alt="Amar Travels Fleet" 
               fill 
               sizes="(max-width: 768px) 100vw, 50vw"

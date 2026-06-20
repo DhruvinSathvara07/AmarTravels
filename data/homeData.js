@@ -29,7 +29,7 @@ export const homeHeroData = {
     },
   ],
   image: {
-    src: "/herosection.png",
+    src: "/herosection.webp",
     alt: "Amar Travels Premium Van"
   }
 };
@@ -41,7 +41,7 @@ export const premiumFleetData = [
     seats: "4 + 1 Seats",
     ac: true,
     price: "12",
-    image: "/swiftdzire.png"
+    image: "/swiftdzire.webp"
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const premiumFleetData = [
     seats: "6 + 1 Seats",
     ac: true,
     price: "16",
-    image: "/ertigasuv.png"
+    image: "/ertigasuv.webp"
   },
   {
     id: 3,
@@ -57,7 +57,7 @@ export const premiumFleetData = [
     seats: "7 + 1 Seats",
     ac: true,
     price: "18",
-    image: "/invovacresta.png"
+    image: "/invovacresta.webp"
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const premiumFleetData = [
     seats: "6 + 1 Seats",
     ac: true,
     price: "16",
-    image: "/kiacarens.png"
+    image: "/kiacarens.webp"
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ export const premiumFleetData = [
     seats: "13 Seats",
     ac: true,
     price: "18",
-    image: "/tufancruiser.png"
+    image: "/tufancruiser.webp"
   },
   {
     id: 6,
@@ -81,7 +81,7 @@ export const premiumFleetData = [
     seats: "12 to 20 Seats",
     ac: true,
     price: "24",
-    image: "/tempotraveller.png"
+    image: "/tempotraveller.webp"
   },
   {
     id: 7,
@@ -89,7 +89,7 @@ export const premiumFleetData = [
     seats: "16 Seats",
     ac: true,
     price: "28",
-    image: "/urbaniapremium.png"
+    image: "/urbaniapremium.webp"
   },
   {
     id: 8,
@@ -97,7 +97,7 @@ export const premiumFleetData = [
     seats: "30 Seats",
     ac: true,
     price: "45",
-    image: "/30seetarbus.png"
+    image: "/30seetarbus.webp"
   },
   {
     id: 9,
@@ -105,7 +105,7 @@ export const premiumFleetData = [
     seats: "56 Seats",
     ac: true,
     price: "60",
-    image: "/56seatarbus.png"
+    image: "/56seatarbus.webp"
   },
   {
     id: 10,
@@ -113,7 +113,7 @@ export const premiumFleetData = [
     seats: "Any Size",
     ac: true,
     price: "-",
-    image: "/alltypebusand luxurycar.png"
+    image: "/alltypebusand luxurycar.webp"
   }
 ];
 
@@ -201,42 +201,42 @@ export const tourPackagesData = [
     title: "Statue of Unity",
     duration: "1 Day Trip",
     price: "1,499",
-    image: "/serviceimage1.png"
+    image: "/serviceimage1.webp"
   },
   {
     id: 2,
     title: "Kutch Rann",
     duration: "2 Nights / 3 Days",
     price: "8,999",
-    image: "/serviceimage2.png"
+    image: "/serviceimage2.webp"
   },
   {
     id: 3,
     title: "Dwarka",
     duration: "2 Nights / 3 Days",
     price: "7,999",
-    image: "/serviceimage3.png"
+    image: "/serviceimage3.webp"
   },
   {
     id: 4,
     title: "Somnath",
     duration: "1 Night / 2 Days",
     price: "4,999",
-    image: "/serviceimage4.png"
+    image: "/serviceimage4.webp"
   },
   {
     id: 5,
     title: "Gir National Park",
     duration: "2 Nights / 3 Days",
     price: "9,499",
-    image: "/serviceimage5.png"
+    image: "/serviceimage5.webp"
   },
   {
     id: 6,
     title: "Ahmedabad Heritage",
     duration: "1 Day Trip",
     price: "1,299",
-    image: "/serviceimage6.png"
+    image: "/serviceimage6.webp"
   }
 ];
 
@@ -285,21 +285,21 @@ export const testimonialsData = [
     text: '"Amar Travels made our trip to Dwarka so comfortable. Excellent service!"',
     name: "Rakesh Patel",
     location: "Ahmedabad",
-    image: "/review1.png"
+    image: "/review1.webp"
   },
   {
     id: 2,
     text: '"Very professional team and well-maintained vehicles. Highly recommended!"',
     name: "Meena Shah",
     location: "Vadodara",
-    image: "/review2.png"
+    image: "/review2.webp"
   },
   {
     id: 3,
     text: '"Our family trip to Kutch was amazing. Thanks to Amar Travels!"',
     name: "Jignesh Mehta",
     location: "Surat",
-    image: "/review3.png"
+    image: "/review3.webp"
   }
 ];
 
@@ -308,24 +308,24 @@ export const latestBlogsData = [
     id: 1,
     date: "20 May 2024",
     title: "Top 10 Places to Visit in Gujarat",
-    image: "/serviceimage1.png"
+    image: "/serviceimage1.webp"
   },
   {
     id: 2,
     date: "18 May 2024",
     title: "Road Trip Tips for a Safe Journey",
-    image: "/serviceimage2.png"
+    image: "/serviceimage2.webp"
   },
   {
     id: 3,
     date: "15 May 2024",
     title: "Why Group Travel is Better",
-    image: "/serviceimage3.png"
+    image: "/serviceimage3.webp"
   },
   {
     id: 4,
     date: "12 May 2024",
     title: "Weekend Getaways Near Ahmedabad",
-    image: "/serviceimage4.png"
+    image: "/serviceimage4.webp"
   }
 ];

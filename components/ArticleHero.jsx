@@ -6,7 +6,7 @@ export default function ArticleHero({ blog }) {
       {/* Featured Image */}
       <div className="relative w-full h-[260px] md:h-[420px] mb-10 rounded-[32px] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
         <Image
-          src={blog.image || "/swiftdzire.png"}
+          src={blog.image || "/swiftdzire.webp"}
           alt={blog.title}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

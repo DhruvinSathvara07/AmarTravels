@@ -1,5 +1,3 @@
-
-
 import Hero from "@/components/Hero";
 import SearchBox from "@/components/SearchBox";
 import PremiumFleet from "@/components/PremiumFleet";
@@ -11,7 +9,6 @@ import WhyChooseSection from "@/components/WhyChooseSection";
 import StatsSection from "@/components/StatsSection";
 import ArticleSection from "@/components/ArticleSection";
 import CTASection from "@/components/CTASection";
-
 import { latestBlogsData, homeHeroData } from "@/data/homeData";
 
 export default function Home() {
@@ -31,4 +28,3 @@ export default function Home() {
     </main>
   );
 }
-

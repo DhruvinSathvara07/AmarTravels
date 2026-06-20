@@ -15,7 +15,7 @@ import {
 
 export const navbarData = {
   logo: {
-    src: "/logo.png",
+    src: "/logo.webp",
     alt: "Amar Travels Logo",
     width: 130,
     height: 42
@@ -30,7 +30,7 @@ export const navbarData = {
   ],
   cta: {
     text: "Book Now",
-    href: "/booking"
+    href: "tel:+919725409908"
   }
 };
 
@@ -62,7 +62,7 @@ export const heroData = {
     },
   ],
   image: {
-    src: "/herosection.png",
+    src: "/herosection.webp",
     alt: "Amar Travels"
   }
 };
@@ -123,7 +123,7 @@ export const missionData = {
   label: "OUR MISSION",
   heading: "Making Every Journey\nMeaningful",
   description: "To make travel easy and comfortable with reliable car rental, bus rental, and tours & travels services across Ahmedabad and Gujarat for every journey and occasion.",
-  backgroundImage: "/ctabackgroundimage.png",
+  backgroundImage: "/ctabackgroundimage.webp",
   features: [
     {
       Icon: ShieldCheck,
@@ -162,42 +162,162 @@ export const reviewData = {
   reviews: [
     {
       id: 1,
-      name: "Rakesh Patel",
-      location: "Ahmedabad, Gujarat",
-      image: "/review1.png",
-      review: "Amar Travels made our family trip to Dwarka so comfortable! The vehicle was clean, spacious, and extremely luxurious. Excellent customer service from start to finish!",
+      name: "Ishwar Chaudhary",
+      location: "",
+      image: "/review1.webp",
+      review: "Amar travels is best sarvice. using service of this traveller is always a wonderful experience. Have used this traveller's services multiple times, believe me there was note a single problem I have faced. Nice and polite staff",
       rating: 5,
     },
     {
       id: 2,
-      name: "Meena Shah",
-      location: "Vadodara, Gujarat",
-      image: "/review2.png",
-      review: "Very professional team and well-maintained vehicles. We rented a bus for a corporate outing and the ride was exceptionally smooth. Highly recommended for premium travel!",
+      name: "Vishal chaudhary",
+      location: "",
+      image: "/review2.webp",
+      review: "Excellent driving experience! The driver was punctual, friendly, and made the journey very smooth and comfortable.",
       rating: 5,
     },
     {
       id: 3,
-      name: "Jignesh Mehta",
-      location: "Surat, Gujarat",
-      image: "/review3.png",
-      review: "Our family trip to Kutch was amazing, thanks to Amar Travels. The driver was extremely polite, punctual, and knew all the routes perfectly. Will definitely book again!",
+      name: "HARSHAD PATEL",
+      location: "",
+      image: "/review3.webp",
+      review: "Your driving,Speed, Clearing, Time managnment and also beheviyer is best.My journey is Maharastra and Goa.I am happy this experperiance. My family again long journey also.best of luck 🤞🤞",
       rating: 5,
     },
     {
       id: 4,
-      name: "Priyesh Sharma",
-      location: "Rajkot, Gujarat",
-      image: "/review1.png",
-      review: "Outstanding service quality! The booking process was seamless, and the vehicle arrived ahead of schedule. The seats were very comfortable for a long road trip.",
+      name: "Janaksinhjadejalalsinh Jadeja",
+      location: "",
+      image: "/review1.webp",
+      review: "Good sarvis kiran bhai",
       rating: 5,
     },
     {
       id: 5,
-      name: "Anita Desai",
-      location: "Gandhinagar, Gujarat",
-      image: "/review2.png",
-      review: "Excellent experience renting a premium van. Highly cooperative staff and transparent billing. It made our pilgrimage journey hassle-free and truly memorable.",
+      name: "Chaudhary Rohit",
+      location: "",
+      image: "/review2.webp",
+      review: "Best travels",
+      rating: 5,
+    },
+    {
+      id: 6,
+      name: "Sparsh 4938",
+      location: "",
+      image: "/review3.webp",
+      review: "Kiranbhai and car both are too good...",
+      rating: 5,
+    },
+    {
+      id: 7,
+      name: "Viren Chaudhary",
+      location: "",
+      image: "/review1.webp",
+      review: "Kiran Bhai and car both are too good 👍",
+      rating: 5,
+    },
+    {
+      id: 8,
+      name: "Desai Sanjay",
+      location: "",
+      image: "/review2.webp",
+      review: "Kiran Bhai good person",
+      rating: 5,
+    },
+    {
+      id: 9,
+      name: "Jashu Patel",
+      location: "",
+      image: "/review3.webp",
+      review: "Very good service",
+      rating: 5,
+    },
+    {
+      id: 10,
+      name: "Chaudhary Mahesh",
+      location: "",
+      image: "/review1.webp",
+      review: "Good service",
+      rating: 5,
+    },
+    {
+      id: 11,
+      name: "Jigar Verat",
+      location: "",
+      image: "/review2.webp",
+      review: "Great experience",
+      rating: 5,
+    },
+    {
+      id: 12,
+      name: "Kiran Chaudhary",
+      location: "",
+      image: "/review3.webp",
+      review: "Good sarvis",
+      rating: 5,
+    },
+    {
+      id: 13,
+      name: "Ravi Chaudhary",
+      location: "",
+      image: "/review1.webp",
+      review: "Good Service",
+      rating: 5,
+    },
+    {
+      id: 14,
+      name: "Vivek Teckchandani",
+      location: "",
+      image: "/review2.webp",
+      review: "Very nice and cooperative man",
+      rating: 5,
+    },
+    {
+      id: 15,
+      name: "Janak Jadeja",
+      location: "",
+      image: "/review3.webp",
+      review: "Good sarvis",
+      rating: 5,
+    },
+    {
+      id: 16,
+      name: "Kishan Chaudhary",
+      location: "",
+      image: "/review1.webp",
+      review: "Highly recommended. Polite and very nice behaviour with the customer.👍",
+      rating: 5,
+    },
+    {
+      id: 17,
+      name: "Meena Choudhary",
+      location: "",
+      image: "/review2.webp",
+      review: "Good",
+      rating: 5,
+    },
+    {
+      id: 18,
+      name: "Chirag Trivedi",
+      location: "",
+      image: "/review3.webp",
+      review: "Mind Blowing Experience And Such a Decent Staff They Have !😇",
+      rating: 5,
+    },
+    {
+      id: 19,
+      name: "અમરધામ લાલગેબી આશ્રમ મોડપર લાલગેબી આશ્રમ",
+      location: "",
+      image: "/review1.webp",
+      review: "Super sef driving",
+      rating: 5,
+    },
+    {
+      id: 20,
+      name: "chaudhari jig's anjana",
+      location: "",
+      image: "/review2.webp",
+      review: "Kiranbhai has very good driving skills.",
       rating: 5,
     },
   ]
@@ -208,14 +328,14 @@ export const ctaData = {
   description: "Whether it's a family trip, corporate travel or a spiritual journey — we are here to make it exceptional.",
   buttonText: "Book Your Journey",
   image: {
-    src: "/herosection.png",
+    src: "/herosection.webp",
     alt: "Amar Travels Premium Vehicle"
   }
 };
 
 export const footerData = {
   brand: {
-    logo: "/logo.png",
+    logo: "/logo.webp",
     description: "Your trusted travel partner for comfortable and memorable journeys across Gujarat and beyond."
   },
   socials: [
