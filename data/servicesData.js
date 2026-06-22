@@ -10,7 +10,7 @@ export const servicesHeroData = {
     highlightedText: "Every Time",
     className: "max-w-[600px] text-3xl sm:text-4xl md:text-5xl lg:text-[46px]"
   },
-  description: "Amar Travels offers car rental, bus rental, and tours & travels in Ahmedabad and across Gujarat. We provide buses, cars and luxury vehicles with professional drivers for family trips, business travel, weddings,group tours and tours travels.",
+  description: "Amar Travels offers the best car rental near me and luxury bus booking across Gujarat. From corporate travel services to wedding car rental in Ahmedabad, our expert drivers and premium vehicles ensure a safe and comfortable journey.",
   descriptionClassName: "text-[13px] sm:text-[14px] max-w-[420px]",
   cta: {
     text: "Book Now",
