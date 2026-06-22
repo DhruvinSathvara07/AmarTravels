@@ -21,7 +21,6 @@ export default function Home() {
       <ServicesSection />
       <MissionSection />
       <WhyChooseSection />
-      {/* <WhyChooseSection /> */}
       <StatsSection />
       <ReviewSection />
       <ArticleSection blogs={latestBlogsData} limit={3} showExploreButton={true} />

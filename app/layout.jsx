@@ -25,10 +25,6 @@ const caveat = Caveat({
   display: 'swap',
 });
 
-export const metadata = {
-  title: "About Us | Amar Travels - Premium Travel & Transportation in Gujarat",
-  description: "Amar Travels is Gujarat's leading luxury transportation brand. Committed to providing premium, safe, and comfortable journeys with high-end vehicles and exceptional service.",
-};
 
 export default function RootLayout({ children }) {
   return (
