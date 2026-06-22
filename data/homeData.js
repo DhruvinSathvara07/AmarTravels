@@ -9,7 +9,7 @@ export const homeHeroData = {
     subText: "Comfort & ",
     highlightedText: "Style."
   },
-  description: "Car rental, bus rental, and tours travels in Ahmedabad and Gujarat.",
+  description: "Top-rated travel agency offering premium car rental in Ahmedabad, luxury bus booking online, and tempo traveller on rent. Book outstation cabs and family tour packages across Gujarat.",
   cta: {
     text: "Call Now",
     href: "/booking"
@@ -160,19 +160,19 @@ export const premiumServicesData = [
   {
     id: 1,
     title: "Transport Service",
-    description: "Car rental, bus rental and transport services in Ahmedabad and across Gujarat for local and outstation travel.",
+    description: "Find the best car rental near me and bus booking online. We offer reliable outstation taxi service and tempo traveller on rent in Ahmedabad.",
     iconName: "Car"
   },
   {
     id: 2,
     title: "Tours & Travels Service",
-    description: "Customized tours and travels services for Gujarat tours, family trips, group tours and outstation journeys.",
+    description: "As the best travel agency in Ahmedabad, we offer customized holiday packages, family tour packages, and memorable gujarat tours.",
     iconName: "MapPin"
   },
   {
     id: 3,
     title: "Wedding Car Rental",
-    description: "Premium wedding car rental services in Ahmedabad for weddings, events and special occasions.",
+    description: "Premium wedding car rental in Ahmedabad. We provide luxury car rental and luxury bus booking for weddings, events, and special occasions.",
     iconName: "Heart"
   },
   {
@@ -184,7 +184,7 @@ export const premiumServicesData = [
   {
     id: 5,
     title: "Car & Bus Rental",
-    description: "Car rental, luxury bus rental, SUV rental and travel vehicles available for every travel requirement.",
+    description: "Corporate travel services, luxury bus rental Ahmedabad, and tempo traveller on rent. Rent a car for outstation with ease.",
     iconName: "Briefcase"
   },
   {
