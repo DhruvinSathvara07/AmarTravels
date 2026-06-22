@@ -26,16 +26,20 @@ const caveat = Caveat({
 });
 
 export const metadata = {
-  title: "About Us | Amar Travels - Premium Travel & Transportation in Gujarat",
-  description: "Amar Travels is Gujarat's leading luxury transportation brand. Committed to providing premium, safe, and comfortable journeys with high-end vehicles and exceptional service.",
+  title: "Amar Travels | Car Rental & Bus Rental in Ahmedabad, Gujarat",
+  description: "Amar Travels is Gujarat's leading car rental and bus rental agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+  icons: {
+    icon: '/logo.webp',
+    apple: '/logo.webp',
+  },
 };
 
 export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'TravelAgency',
+    '@type': 'ToursTravels & Car,Bus Rental',
     name: 'Amar Travels',
-    image: 'https://www.amartourstravels.com/logo.png',
+    image: 'https://www.amartourstravels.com/logo.webp',
     '@id': 'https://www.amartourstravels.com',
     url: 'https://www.amartourstravels.com',
     telephone: '+919725409908',
@@ -58,8 +62,8 @@ export default function RootLayout({ children }) {
     },
     priceRange: '₹₹',
     sameAs: [
-      'https://www.facebook.com/',
-      'https://www.instagram.com/'
+      'https://www.instagram.com/amar_travels_9094/',
+      'https://www.instagram.com/amar_travels_9094/'
     ]
   };
 

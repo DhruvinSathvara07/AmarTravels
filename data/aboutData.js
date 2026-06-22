@@ -340,10 +340,9 @@ export const footerData = {
     description: "Your trusted travel partner for comfortable and memorable journeys across Gujarat and beyond."
   },
   socials: [
-    { name: "Facebook", href: "https://facebook.com" },
-    { name: "Instagram", href: "https://instagram.com" },
+    { name: "Facebook", href: "https://www.instagram.com/amar_travels_9094/" },
+    { name: "Instagram", href: "https://www.instagram.com/amar_travels_9094/" },
     { name: "WhatsApp", href: "https://wa.me/919725409908" },
-    { name: "YouTube", href: "https://youtube.com" }
   ],
   quickLinks: {
     title: "Quick Links",

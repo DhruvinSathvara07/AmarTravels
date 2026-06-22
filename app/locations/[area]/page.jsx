@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
   }
 
   const title = `Best Travels & Car Rental in ${areaName}, Ahmedabad`;
-  const description = `Looking for the best travel agency in ${areaName}? Amar Travels offers premium car rental, luxury bus booking, and outstation cabs directly from ${areaName}, Ahmedabad.`;
+  const description = `Looking for the best travel agency in ${areaName}? Amar Travels offers the best car rental, ac bus booking, and outstation cabs directly from ${areaName}, Ahmedabad.`;
 
   return {
     title,
@@ -69,11 +69,11 @@ export default async function LocationLandingPage({ params }) {
   const locationHeroData = {
     label: `AMAR TRAVELS IN ${areaName.toUpperCase()}`,
     heading: {
-      plainText: "Premium Travel Services in ",
+      plainText: "Best Travel & Car Rental in ",
       highlightedText: areaName,
       className: "max-w-[800px] text-4xl sm:text-5xl lg:text-6xl"
     },
-    description: `Experience the highest quality car rental and outstation taxi services right here in ${areaName}, Ahmedabad. We offer a modern fleet with expert drivers for all your travel needs.`,
+    description: `Experience the best car rental and outstation taxi services right here in ${areaName}, Ahmedabad. We offer a modern fleet with expert drivers for all your travel needs.`,
     cta: { text: "Book Your Ride", href: "/booking" },
     image: { src: "/herosection.png", alt: `Amar Travels in ${areaName}` }
   };
@@ -81,8 +81,8 @@ export default async function LocationLandingPage({ params }) {
   // Generate highly specific dynamic paragraphs for this area
   const seoTitle = `Top Rated Travel Agency in ${areaName}`;
   const seoParagraphs = [
-    `If you are based in ${areaName} and looking for a reliable travel partner, Amar Travels is your premier choice. We understand the local routes and traffic patterns around ${areaName}, ensuring that your outstation cabs or local car rental services arrive on time, every time.`,
-    `Whether you need a luxury tempo traveller on rent for a family function near ${areaName} or require professional corporate travel services for your business, our fleet is stationed to serve you quickly. We pride ourselves on offering transparent pricing and the best taxi service in the ${areaName} area.`
+    `If you are based in ${areaName} and looking for a reliable travel partner, Amar Travels is your top choice. We understand the local routes and traffic patterns around ${areaName}, ensuring that your outstation cabs or local car rental services arrive on time, every time.`,
+    `Whether you need a comfortable tempo traveller on rent for a family function near ${areaName} or require professional corporate travel services for your business, our fleet is stationed to serve you quickly. We pride ourselves on offering transparent pricing and the best taxi service in the ${areaName} area.`
   ];
   
   // Mix up keywords using string length to ensure variability

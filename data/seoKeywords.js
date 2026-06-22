@@ -4,14 +4,14 @@ export const ahmedabadLocationKeywords = [
   "car rental ahmedabad",
   "bus rental ahmedabad",
   "tempo traveller on rent in ahmedabad",
-  "luxury car rental ahmedabad",
+  "best car rental ahmedabad",
   "outstation cabs from ahmedabad",
   "ahmedabad travels agency",
   "tour operators in ahmedabad",
   "gujarat tours from ahmedabad",
   "ahmedabad to outstation taxi",
   "wedding car rental in ahmedabad",
-  "luxury bus rental ahmedabad"
+  "ac bus rental ahmedabad"
 ];
 
 export const travelsHighVolumeKeywords = [
@@ -20,7 +20,7 @@ export const travelsHighVolumeKeywords = [
   "best travel agency",
   "tempo traveller on rent",
   "outstation taxi service",
-  "luxury bus booking",
+  "ac bus booking",
   "holiday packages",
   "corporate travel services",
   "wedding car rental",
@@ -61,4 +61,14 @@ export const ahmedabadAreas = [
   "Motera",
   "Sabarmati",
   "Ranip"
+];
+
+export const serviceSlugs = [
+  { slug: "car-rental", name: "Car Rental" },
+  { slug: "bus-rental", name: "Bus Rental" },
+  { slug: "tempo-traveller-on-rent", name: "Tempo Traveller on Rent" },
+  { slug: "outstation-cabs", name: "Outstation Cabs" },
+  { slug: "wedding-car-rental", name: "Wedding Car Rental" },
+  { slug: "corporate-travel", name: "Corporate Travel Services" },
+  { slug: "gujarat-tours", name: "Gujarat Tours" }
 ];
