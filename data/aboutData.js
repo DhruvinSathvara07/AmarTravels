@@ -26,6 +26,7 @@ export const navbarData = {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Blogs", href: "/blogs" },
+    { name: "Locations", href: "/locations" },
     { name: "Contact", href: "/contact" },
   ],
   cta: {
@@ -42,7 +43,7 @@ export const heroData = {
     highlightedText: "Passion.",
     className: "max-w-[500px] text-4xl sm:text-[46px] lg:text-[46px]"
   },
-  description: "Amar Travels is a trusted tours & travels in Ahmedabad offering car,buses, luxury vehicles, tour travel, across Gujarat. With buses and cars comfortable with professional drivers, and reliable service, we make every journey safe, memorable and comfortable",
+  description: "Amar Travels is a trusted travel agency in Ahmedabad offering premium car rental, luxury bus booking, and tempo traveller on rent across Gujarat. With professional drivers and reliable outstation taxi service, we make every journey safe, memorable and comfortable.",
   cta: {
     text: "Book Now",
     href: "/booking"
@@ -352,6 +353,7 @@ export const footerData = {
       { name: "About", href: "/about" },
       { name: "Services", href: "/services" },
       { name: "Blogs", href: "/blogs" },
+      { name: "Service Areas", href: "/locations" },
       { name: "Contact", href: "/contact" }
     ]
   },
@@ -374,6 +376,7 @@ export const footerData = {
       { name: "About", href: "/about" },
       { name: "Services", href: "/services" },
       { name: "Blogs", href: "/blogs" },
+      { name: "Locations", href: "/locations" },
       { name: "Contact", href: "/contact" }
     ]
   },

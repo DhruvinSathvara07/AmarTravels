@@ -10,7 +10,7 @@ export const contactHeroData = {
     highlightedText: "Travel",
     className: "max-w-[600px] text-4xl sm:text-5xl md:text-[46px] lg:text-[46px]"
   },
-  description: "Have questions or need assistance with your travel plans? Our team is ready to help you 24/7. Reach out to us through any of the methods below.",
+  description: "Have questions about outstation cabs from Ahmedabad or need assistance booking a tempo traveller on rent? Our team at the best travel agency in Ahmedabad is ready to help you 24/7.",
   cta: {
     text: "Book Now",
     href: "/booking"
