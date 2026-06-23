@@ -12,8 +12,8 @@ export const metadata = {
   description: "Amar Travels provides premium car rental, luxury bus booking, and outstation taxi services across all major areas of Ahmedabad. Find travel services near you.",
   keywords: "locations ahmedabad, travel agency areas, car rental ahmedabad locations",
   openGraph: {
-    title: "Areas We Serve in Ahmedabad | Amar Travels",
-    description: "Amar Travels provides premium car rental, luxury bus booking, and outstation taxi services across all major areas of Ahmedabad.",
+    title: "Service Areas | Amar Travels Gujarat",
+    description: "Amar Travels provides premium car rental and bus booking services across Ahmedabad, Gandhinagar, Vadodara, Surat, Rajkot, and all major cities in Gujarat.",
     url: "https://www.amartourstravels.com/locations",
     siteName: "Amar Travels",
     images: [

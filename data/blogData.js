@@ -204,5 +204,34 @@ export const latestBlogsData = [
       ],
       conclusion: "Make your next group trip unforgettable. Amar Travels offers premium AC tempo travellers and luxury bus booking across Gujarat at highly competitive rates."
     }
+  },
+  {
+    id: 7,
+    slug: "ultimate-guide-car-bus-rental-tours-travels-ahmedabad",
+    category: "TOURS AND TRAVELS",
+    title: "Ultimate Guide to Car & Bus Rental: Best Tours and Travels in Ahmedabad",
+    description: "Discover how to choose the best car rental and bus rental for your next trip. From Innova to 56 Seater Luxury Buses, we have you covered.",
+    image: "/herosection.webp",
+    date: "July 01, 2024",
+    readTime: "8 min read",
+    author: "Amar Travels Team",
+    content: {
+      intro: "Planning a trip in Gujarat and searching online for 'car bhade joi e che' or 'bus bhade joi e che'? You've landed at the right place. Amar Travels is your one-stop solution for the best tours and travels experience in Ahmedabad. We offer an extensive and premium fleet ranging from 4-seater sedans to 56-seater luxury buses to accommodate any group size.",
+      sections: [
+        {
+          heading: "Car Rental For Families & Small Groups",
+          paragraph: "If you need a reliable 'gadi bhade joi e che' for a family trip, our fleet includes the New Model Swift Dzire with Carrier (4 + 1 Seater Sedan AC), the spacious New Model Ertiga SUV (6 + 1 Seater), the ever-popular Innova Crysta (7 + 1 Seater SUV), and the luxurious Kia Carens (6 + 1 Seater Premium MPV). These vehicles ensure your family travels in absolute comfort and safety."
+        },
+        {
+          heading: "Tempo Travellers & Utility Vehicles",
+          paragraph: "For medium-sized groups planning a weekend getaway, we highly recommend our Tempo Traveller (12 to 20 Seater AC Traveller) or the Urbania Premium (16 Seater). For rugged utility, we also offer the Tufan Cruiser (13 Seater). These vehicles are perfect for long journeys, offering push-back seats and excellent AC."
+        },
+        {
+          heading: "Bus Rental for Large Corporate & Wedding Groups",
+          paragraph: "When someone says 'amare luxury bus bhade mali rese?', our answer is always yes! We provide a 30 Seater AC Bus and a massive 56 Seater Luxury Bus. These are heavily demanded for weddings, corporate outings, and large tour packages across Gujarat."
+        }
+      ],
+      conclusion: "When you look for the best Tours and Travels in Ahmedabad, Amar Travels stands out for transparent pricing, a modern fleet, and verified professional drivers. Book now to make your next journey unforgettable!"
+    }
   }
 ];

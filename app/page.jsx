@@ -10,7 +10,8 @@ import StatsSection from "@/components/StatsSection";
 import ArticleSection from "@/components/ArticleSection";
 import CTASection from "@/components/CTASection";
 import DynamicSEOContent from "@/components/DynamicSEOContent";
-import { latestBlogsData, homeHeroData } from "@/data/homeData";
+import { homeHeroData } from "@/data/homeData";
+import { latestBlogsData } from "@/data/blogData";
 import { ahmedabadLocationKeywords, travelsHighVolumeKeywords, ahmedabadAreas } from "@/data/seoKeywords";
 
 export const metadata = {
