@@ -29,13 +29,21 @@ const caveat = Caveat({
 export const metadata = {
   metadataBase: new URL('https://www.amartourstravels.com'),
   title: {
-    default: "Amar Travels | Car Rental & Bus Rental in Ahmedabad, Gujarat",
-    template: "%s | Amar Travels",
+    default: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
+    template: "%s | Amar Travels & Tours",
   },
-  description: "Amar Travels is Gujarat's leading car rental and bus rental agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+  description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
   keywords: [
     // Brand Keywords
     "Amar Travels",
+    "Amar Tour & Travels",
+    "Amar Tours & Travels",
+    "Amar Tour and Travels",
+    "Amar Tours and Travels",
+    "Amar Tour & Travels Ahmedabad",
+    "Amar Tours & Travels Ahmedabad",
+    "Amar Tour and Travels Ahmedabad",
+    "Amar Tours and Travels Ahmedabad",
     "Amar Tours Travels",
     "Amar Travels Ahmedabad",
 
@@ -110,9 +118,9 @@ export const metadata = {
     type: 'website',
     locale: 'en_IN',
     url: 'https://www.amartourstravels.com',
-    siteName: 'Amar Travels',
-    title: "Amar Travels | Car Rental & Bus Rental in Ahmedabad, Gujarat",
-    description: "Amar Travels is Gujarat's leading car rental and bus rental agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+    siteName: 'Amar Travels & Tours',
+    title: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
+    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
     images: [
       {
         url: '/logo.webp',
@@ -124,8 +132,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Amar Travels | Car Rental & Bus Rental in Ahmedabad, Gujarat",
-    description: "Amar Travels is Gujarat's leading car rental and bus rental agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+    title: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
+    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
     images: ['/logo.webp'],
   },
   robots: {
@@ -151,24 +159,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'ToursTravels & Car,Bus Rental',
+    '@type': ['TravelAgency', 'AutoRental'],
     name: 'Amar Travels',
+    alternateName: [
+      'Amar Tour & Travels',
+      'Amar Tours & Travels',
+      'Amar Tour and Travels',
+      'Amar Tours and Travels',
+      'Amar Travels Ahmedabad'
+    ],
     image: 'https://www.amartourstravels.com/logo.webp',
     '@id': 'https://www.amartourstravels.com',
     url: 'https://www.amartourstravels.com',
     telephone: '+919725409908',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Ahmedabad',
+      streetAddress: 'Gokudham Society, near Lalgebi Ashram, Hathijan',
       addressLocality: 'Ahmedabad',
       addressRegion: 'Gujarat',
-      postalCode: '380001',
+      postalCode: '382445',
       addressCountry: 'IN'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 23.022505,
-      longitude: 72.571362
+      latitude: 22.928668,
+      longitude: 72.665005
     },
     areaServed: {
       '@type': 'City',
@@ -176,7 +191,6 @@ export default function RootLayout({ children }) {
     },
     priceRange: '₹₹',
     sameAs: [
-      'https://www.instagram.com/amar_travels_9094/',
       'https://www.instagram.com/amar_travels_9094/'
     ]
   };
