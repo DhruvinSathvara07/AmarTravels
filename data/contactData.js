@@ -85,12 +85,12 @@ export const officeCardData = {
   heading: "Our Office",
   address: {
     name: "Amar Travels",
-    line1: "123, S.G. Highway,",
-    line2: "Ahmedabad,",
-    line3: "Gujarat - 380054, India"
+    line1: "Gokudham Society, near Lalgebi Ashram,",
+    line2: "Hathijan, Ahmedabad,",
+    line3: "Gujarat - 382445, India"
   },
   buttonText: "Get Directions",
-  buttonLink: "https://maps.google.com/?q=Amar+Travels,+Ahmedabad",
+  buttonLink: "https://maps.google.com/?q=AMAR+TRAVELS,+near+Lalgebi+Ashram,+Hathijan,+Ahmedabad",
   mapIframeUrl: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14698.340542677428!2d72.665005!3d22.928668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e890012c9971f%3A0x5250d392a7ed38e8!2sAMAR%20TRAVELS!5e0!3m2!1sen!2sus!4v1781417438163!5m2!1sen!2sus"
 };
 
