@@ -191,8 +191,16 @@ export default function RootLayout({ children }) {
     },
     priceRange: '₹₹',
     sameAs: [
-      'https://www.instagram.com/amar_travels_9094/'
-    ]
+      'https://www.instagram.com/amar_travels_9094/',
+      'https://maps.google.com/?cid=5931448651918391528'
+    ],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      reviewCount: '124',
+      bestRating: '5',
+      worstRating: '1'
+    }
   };
 
   return (
