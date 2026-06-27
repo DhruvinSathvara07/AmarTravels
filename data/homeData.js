@@ -5,11 +5,11 @@ import { ShieldCheck, CarFront, Users } from "lucide-react";
 export const homeHeroData = {
   label: "WELCOME TO AMAR TOUR & TRAVELS",
   heading: {
-    plainText: "Journey with ",
-    subText: "Comfort & ",
-    highlightedText: "Style."
+    plainText: "Top-Rated Travels ",
+    subText: "in ",
+    highlightedText: "Ahmedabad."
   },
-  description: "Top-rated tour and travels agency in Ahmedabad. Amar Travels (Amar Tour & Travels) offers premium car rental in Ahmedabad, luxury bus booking online, tempo traveller on rent, outstation cabs, and custom family tour packages across Gujarat.",
+  description: "Looking for the best travels in Ahmedabad? Amar Travels (Amar Tour & Travels) offers premium car rental in Ahmedabad, luxury bus booking online, tempo traveller on rent, outstation cabs, and custom family tour packages across Gujarat.",
   cta: {
     text: "Call Now",
     href: "/booking"

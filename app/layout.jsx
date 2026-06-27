@@ -29,10 +29,10 @@ const caveat = Caveat({
 export const metadata = {
   metadataBase: new URL('https://www.amartourstravels.com'),
   title: {
-    default: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
+    default: "Amar Travels & Tours | Travel Agency, Car & Bus Rental in Ahmedabad",
     template: "%s | Amar Travels & Tours",
   },
-  description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+  description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading travel agency and car rental service, offering premium tour packages, reliable car rentals, and safe bus rentals across Ahmedabad and Gujarat.",
   keywords: [
     // Brand Keywords
     "Amar Travels",
@@ -119,8 +119,8 @@ export const metadata = {
     locale: 'en_IN',
     url: 'https://www.amartourstravels.com',
     siteName: 'Amar Travels & Tours',
-    title: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
-    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+    title: "Amar Travels & Tours | Travel Agency, Car & Bus Rental in Ahmedabad",
+    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading travel agency and car rental service, offering premium tour packages, reliable car rentals, and safe bus rentals across Ahmedabad and Gujarat.",
     images: [
       {
         url: '/logo.webp',
@@ -132,8 +132,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Amar Travels & Tours | Car Rental & Bus Rental in Ahmedabad, Gujarat",
-    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading car rental, bus rental, and travel agency. Committed to providing the best, safe, and comfortable journeys with top-rated vehicles and exceptional service across Ahmedabad and Gujarat.",
+    title: "Amar Travels & Tours | Travel Agency, Car & Bus Rental in Ahmedabad",
+    description: "Amar Travels (Amar Tour & Travels) is Gujarat's leading travel agency and car rental service, offering premium tour packages, reliable car rentals, and safe bus rentals across Ahmedabad and Gujarat.",
     images: ['/logo.webp'],
   },
   robots: {
