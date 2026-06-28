@@ -12,15 +12,15 @@ import CTASection from "@/components/CTASection";
 import DynamicSEOContent from "@/components/DynamicSEOContent";
 import { homeHeroData } from "@/data/homeData";
 import { latestBlogsData } from "@/data/blogData";
-import { ahmedabadLocationKeywords, travelsHighVolumeKeywords, ahmedabadAreas } from "@/data/seoKeywords";
+import { ahmedabadLocationKeywords, travelsHighVolumeKeywords, ahmedabadAreas, vehicleSpecificKeywords, tourSpecificKeywords } from "@/data/seoKeywords";
 
 export const metadata = {
-  title: "Amar Tour & Travels | Best Car Rental & Bus Rental in Ahmedabad",
-  description: "Book the best car rentals, AC buses, and tour packages with Amar Travels (Amar Tour & Travels) in Ahmedabad. Safe, reliable, and comfortable journeys across Gujarat.",
-  keywords: [...ahmedabadLocationKeywords, ...travelsHighVolumeKeywords, ...ahmedabadAreas].join(", "),
+  title: "Best Travel Agency, Car & Bus Rental in Ahmedabad | Amar Tours",
+  description: "Looking for the best travel agency in Ahmedabad? Amar Tour & Travels offers premier domestic tour packages, along with top-rated car and bus rentals across Gujarat.",
+  keywords: [...ahmedabadLocationKeywords, ...travelsHighVolumeKeywords, ...ahmedabadAreas, ...vehicleSpecificKeywords, ...tourSpecificKeywords].join(", "),
   openGraph: {
-    title: "Amar Tour & Travels | Best Car Rental & Bus Rental in Ahmedabad",
-    description: "Book the best car rentals, AC buses, and tour packages with Amar Travels (Amar Tour & Travels) in Ahmedabad. Safe, reliable, and comfortable journeys across Gujarat.",
+    title: "Best Travel Agency, Car & Bus Rental in Ahmedabad | Amar Tours",
+    description: "Looking for the best travel agency in Ahmedabad? Amar Tour & Travels offers premier domestic tour packages, along with top-rated car and bus rentals across Gujarat.",
     url: "https://www.amartourstravels.com",
     siteName: "Amar Travels & Tours",
     images: [
@@ -37,12 +37,18 @@ export const metadata = {
 };
 
 export default function Home() {
-  const seoTitle = "Best Tour and Travels & Car Rental Agency in Ahmedabad";
+  const seoTitle = "Best Travel Agency & Tour Operator in Ahmedabad";
   const seoParagraphs = [
-    "Welcome to Amar Travels (also widely known as Amar Tour & Travels), the top-rated travel agency in Gujarat. Whether you are looking for a reliable car rental in Ahmedabad, seamless bus booking online, or a comfortable tempo traveller on rent in Ahmedabad, we have you covered. Our fleet ensures safe and smooth journeys for every occasion. From the best car rental Ahmedabad to spacious outstation cabs from Ahmedabad, we offer tailored transportation solutions for individuals, families, and corporate clients.",
-    "Planning a trip? We are recognized as the best travels in Ahmedabad (operating as Amar Tours and Travels) for offering top-tier gujarat tours from Ahmedabad, memorable holiday packages, and custom family tour packages. Need a vehicle for a special event? Our wedding car rental in Ahmedabad provides elegant cars and reliable buses to make your big day perfect. Search for taxi service near me or rent a car for outstation, and you will find Amar Tour and Travels delivering unparalleled comfort and safety across all major locations in Ahmedabad, including SG Highway, Bopal, Vastrapur, and more."
+    "Welcome to Amar Travels (widely known as Amar Tour & Travels), the top-rated travel agency in Gujarat. If you are searching for the best travels in Ahmedabad, we offer premier domestic tour packages, custom family holiday packages, and expert trip planning. Whether you are looking for a reliable car rental in Ahmedabad, seamless bus booking online, or a comfortable 17 seater tempo traveller on rent in Ahmedabad, we have you covered. Our fleet ensures safe and smooth journeys for every occasion.",
+    "Planning a trip? As a leading travel agency in Ahmedabad, we provide top-tier Gujarat tours from Ahmedabad, including the popular Statue of Unity tour package, Somnath Dwarka tour, and memorable all-India holiday packages. Need a vehicle for a special event? Our wedding car rental in Ahmedabad provides elegant cars like Innova Crysta, Swift Dzire, and Kia Carens, as well as reliable Volvo bus on rent in Ahmedabad to make your big day perfect.",
+    "Search for taxi service near me, outstation cabs from Ahmedabad, or rent a car for outstation, and you will find Amar Tour and Travels delivering unparalleled comfort. From 56 seater luxury bus hire in Ahmedabad to Urbania on rent in Ahmedabad, our top-rated transportation solutions cover all major local areas including SG Highway, Bopal, Vastrapur, Navrangpura, and Maninagar."
   ];
-  const seoKeywords = [...ahmedabadLocationKeywords.slice(0, 8), ...travelsHighVolumeKeywords.slice(0, 8)];
+  const seoKeywords = [
+    ...ahmedabadLocationKeywords.slice(0, 8), 
+    ...travelsHighVolumeKeywords.slice(0, 8),
+    ...vehicleSpecificKeywords.slice(0, 5),
+    ...tourSpecificKeywords.slice(0, 5)
+  ];
 
   return (
     <main className="min-h-screen bg-white">

@@ -72,3 +72,32 @@ export const serviceSlugs = [
   { slug: "corporate-travel", name: "Corporate Travel Services" },
   { slug: "gujarat-tours", name: "Gujarat Tours" }
 ];
+
+export const vehicleSpecificKeywords = [
+  "innova crysta on rent in ahmedabad",
+  "swift dzire cab service ahmedabad",
+  "ertiga taxi ahmedabad",
+  "kia carens on rent ahmedabad",
+  "urbania on rent in ahmedabad",
+  "17 seater tempo traveller rent ahmedabad",
+  "20 seater tempo traveller on rent",
+  "volvo bus on rent in ahmedabad",
+  "mini bus rent ahmedabad",
+  "56 seater luxury bus hire ahmedabad",
+  "30 seater ac bus on rent ahmedabad",
+  "luxury car rental for wedding ahmedabad",
+  "tufan cruiser 13 seater rent"
+];
+
+export const tourSpecificKeywords = [
+  "statue of unity tour package from ahmedabad",
+  "somnath dwarka tour from ahmedabad",
+  "gujarat darshan tour packages",
+  "kutch rann utsav packages from ahmedabad",
+  "rajasthan tour packages from ahmedabad",
+  "chardham yatra packages from ahmedabad",
+  "all india tour packages from ahmedabad",
+  "family holiday packages from ahmedabad",
+  "group tour booking in ahmedabad",
+  "honeymoon packages from ahmedabad"
+];
